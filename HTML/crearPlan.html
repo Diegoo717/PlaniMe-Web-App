@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/crearPlan-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+    <title>Crear Plan</title>
+</head>
+<body class="body-crearPlan">
+
+    <img class="iconoRegresar" src="../Imagenes/iconoRegresar.png" alt="" onclick="location.href='dashboard.html'">
+    
+    <form class="contenedorPrincipal-crearPlan">
+        <h1 class="titulo-crearPlan">¡Ingresa tus datos!</h1>
+    
+        <div class="contenedor-campos">
+            <div>
+                <label>Edad:</label>
+                <input type="number" min="12" max="99" placeholder="Ej: 25">
+            </div>
+            
+            <div class="contenedor-sexo">
+                <label>Sexo:</label>
+                <div class="contenedor-opciones-sexo">
+                    <div>
+                        <input type="radio" id="hombre" name="sexo" value="hombre">
+                        <label for="hombre">M</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="mujer" name="sexo" value="mujer">
+                        <label for="mujer">F</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <label>Peso (kg):</label>
+                <input type="number" min="30" max="200" placeholder="Ej: 68">
+            </div>
+            
+            <div>
+                <label>Altura (cm):</label>
+                <input type="number" min="120" max="250" placeholder="Ej: 175">
+            </div>
+            
+            <div>
+                <label>Nivel de actividad física:</label>
+                <select class="select-crearPlan">
+                    <option value="" disabled selected>Selecciona...</option>
+                    <option value="sedentario">Sedentario</option>
+                    <option value="ligero">Ligero (1-2 días/semana)</option>
+                    <option value="moderado">Moderado (3-4 días/semana)</option>
+                    <option value="activo">Activo (5-6 días/semana)</option>
+                </select>
+            </div>
+            
+            <div>
+                <label>Objetivo físico:</label>
+                <select class="select-crearPlan">
+                    <option value="" disabled selected>Selecciona...</option>
+                    <option value="bajar">Bajar de peso</option>
+                    <option value="mantener">Mantener peso</option>
+                    <option value="subir">Aumentar masa muscular</option>
+                </select>
+            </div>
+        </div>
+    
+        <button type="submit" class="btnCalcular">Calcular</button>
+    </form>
+
+</body>
+</html>

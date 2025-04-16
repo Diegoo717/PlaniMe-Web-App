@@ -1,0 +1,134 @@
+.body-crearPlan{
+    margin: 0;
+    background-color: #EFF299;
+    font-family: "Bubblegum Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    min-height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+}
+
+.iconoRegresar{
+    position: absolute;
+    left: 30px;
+    top: 30px; 
+    width: 70px; 
+    height: auto;
+    cursor: pointer;
+}
+
+@keyframes animacion3DEspectacular {
+    0% {
+        transform: perspective(1000px) rotateX(80deg) rotateZ(20deg) translateZ(-200px);
+        opacity: 0;
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+    30% {
+        transform: perspective(1000px) rotateX(20deg) rotateZ(-10deg) translateZ(50px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    }
+    60% {
+        transform: perspective(1000px) rotateX(-5deg) rotateZ(5deg) translateZ(0);
+    }
+    80% {
+        transform: perspective(1000px) rotateX(2deg) rotateZ(-2deg);
+    }
+    100% {
+        transform: perspective(1000px) rotateX(0) rotateZ(0);
+        opacity: 1;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+}
+.contenedorPrincipal-crearPlan {
+    width: 450px;
+    background-color: #A0D94A;
+    border: 5px solid black;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    box-sizing: border-box;
+    align-items: center;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: animacion3DEspectacular 1.2s cubic-bezier(0.25, 0.1, 0.25, 1.5) both;
+}
+
+.titulo-crearPlan {
+    margin: 0 0 15px 0;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.contenedor-campos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.fila {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    flex: 1;
+}
+
+label {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+input[type="number"],
+select {
+    width: 100%; 
+    padding: 8px;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: #EFF299;
+    font-family: inherit;
+    font-size: 0.9rem;
+    box-sizing: border-box; 
+    margin-top: 5px;
+}
+
+.contenedor-opciones-sexo {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.contenedor-opciones-sexo div {
+    display: flex;
+    align-items: center;
+   
+    gap: 5px;
+}
+
+.btnCalcular {
+    padding: 10px 35px;
+    background-color: #FF6B6B;
+    border: 3px solid black;
+    border-radius: 25px;
+    font-family: inherit;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 25px;
+}
+
+.btnCalcular:hover {
+    transform: scale(1.05);
+    background-color: #FF8E8E;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+

@@ -1,0 +1,137 @@
+.body-perfil{
+    margin: 0;
+    background-color: #EFF299;
+    font-family: "Bubblegum Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    min-height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+}
+
+.iconoRegresar{
+    position: absolute;
+    left: 30px;
+    top: 30px; 
+    width: 70px; 
+    height: auto;
+    cursor: pointer;
+}
+
+@keyframes entradaSuave {
+    0% {
+        transform: translateY(-400px) scale(0.95);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(20px) scale(1.02);
+        opacity: 0.9;
+    }
+    70% {
+        transform: translateY(-50px);
+    }
+    85% {
+        transform: translateY(4px);
+    }
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+
+.contenedorPrincipal-perfil {
+    height: 500px;
+    width: 500px;
+    background-color: #A0D94A;
+    border: 5px solid black;
+    border-radius: 10%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    transition: transform 0.3s ease-in, box-shadow 0.3s ease-in;
+    position: relative;
+    animation: entradaSuave 1s cubic-bezier(0.28, 0.84, 0.42, 1) both;
+    transform-origin: center top;
+}
+
+.body-perfil .contenedorPrincipal-perfil {
+    animation-delay: 0.2s;
+}
+
+.fila1 {
+    grid-row: 1;
+    width: 100%; 
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    position: relative; 
+    padding-top: 20px; 
+}
+
+.contenedorPrincipal-perfil img:first-child {
+    margin-top: 20px;
+    height: auto;
+    width: 30%;
+}
+
+.contenedorPrincipal-perfil img:last-child {
+    position: absolute;
+    right: 35px; 
+    top: 35px; 
+    width: 30px; 
+    height: auto;
+    cursor: pointer; 
+}
+
+.fila2 {
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%; 
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%; 
+    font-size: 18px;
+}
+
+.contenidoDinamico{
+    margin-left: 10px;
+}
+
+.fila3 {
+    grid-row: 3;
+    display: flex;
+    align-items: center;
+}
+
+.btnCerrarSesion {
+    background-color: transparent; 
+    color: #333; 
+    border: 1px solid #333; 
+    border-radius: 4px; 
+    padding: 8px 16px; 
+    font-size: 14px;
+    cursor: pointer; 
+    transition: all 0.2s ease; 
+    font-family: "Bubblegum Sans", sans-serif;
+}
+
+.btnCerrarSesion:hover {
+    background-color: rgba(255, 0, 0, 0.1); 
+    color: #d32f2f; 
+    border-color: #d32f2f; 
+}
+
+.btnCerrarSesion:active {
+    transform: scale(0.98); 
+}
+
