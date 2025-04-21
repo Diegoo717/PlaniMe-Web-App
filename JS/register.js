@@ -27,7 +27,7 @@ button.addEventListener("click", function validate(event){
     if(flag === true){
         // Primero ejecutaremos la peticion al servidor
         
-        // Despues redireccionaremos
+        // Despues redireccionamos
         window.location.href = 'login.html';
     }
 });
@@ -106,6 +106,6 @@ function passwordValidate(){
 function showError(element, message) {
     element.textContent = message;
     element.style.display = "inline-block";
-    element.style.marginTop = "0";
+    element.style.marginTop = "0px";
     element.style.marginBottom = "10px";
 }

@@ -153,7 +153,7 @@ form div a:hover {
 
 .errorMessages {
   display: none;
-  color: #FF6B6B;
+  color: red;
   font-size: 17px;
   margin: 2px 0 8px 0;
   height: 16px;

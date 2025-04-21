@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tus Planes</title>
+    <link rel="stylesheet" href="../CSS/tusPlanes-Styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img class="iconoRegresar" src="../Imagenes/iconoRegresar.png" alt="" onclick="location.href='dashboard.html'">
+            <h1>Tus planes alimenticios</h1>
+            <div class="search-filter">
+                <input type="text" placeholder="Buscar plan...">
+                <select>
+                    <option value="all">Todos los planes</option>
+                    <option value="active">Planes activos</option>
+                    <option value="expired">Planes expirados</option>
+                </select>
+            </div>
+        </header>
+        
+        <div class="plans-container">
+            <!-- Plan 1 - Activo -->
+            <div class="plan-card" data-plan-id="1">
+                <div class="plan-preview">
+                    <img src="placeholder-plan1.jpg" alt="Vista previa del plan">
+                    <span class="plan-status active">Activo</span>
+                </div>
+                <div class="plan-info">
+                    <h3>Plan Equilibrado</h3>
+                    <div class="plan-dates">
+                        <span>Creado: 01/04/2025</span>
+                        <span>Expira: 22/04/2025</span>
+                    </div>
+                    <div class="user-data-summary">
+                        <span>32 años, M</span> • 
+                        <span>67kg, 175cm</span> • 
+                        <span>Moderado</span> • 
+                        <span>Bajar de peso</span>
+                    </div>
+                    <div class="plan-actions">
+                        <button class="action-btn view-btn">Ver</button>
+                        <button class="action-btn download-btn">Descargar</button>
+                        <button class="action-btn delete-btn">Eliminar</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Más planes... -->
+        </div>
+    </div>
+    
+    <!-- Vista detallada del plan (oculta inicialmente) -->
+    <div class="detail-view" id="detailView">
+        <div class="detail-content">
+            <div class="pdf-view">
+                <img src="placeholder-pdf.jpg" alt="PDF del plan">
+            </div>
+            <div class="detail-sidebar">
+                <h2 id="detailTitle">Plan Equilibrado</h2>
+                <p id="detailCreated">Plan personalizado creado el 01/04/2025</p>
+                <p id="detailExpires">Expira el: 22/04/2025</p>
+                
+                <div class="user-data">
+                    <h3>Datos del usuario</h3>
+                    <div class="user-data-item">
+                        <span>Edad:</span>
+                        <span id="userAge">32 años</span>
+                    </div>
+                    <div class="user-data-item">
+                        <span>Sexo:</span>
+                        <span id="userGender">Masculino</span>
+                    </div>
+                    <div class="user-data-item">
+                        <span>Peso:</span>
+                        <span id="userWeight">67 kg</span>
+                    </div>
+                    <div class="user-data-item">
+                        <span>Altura:</span>
+                        <span id="userHeight">175 cm</span>
+                    </div>
+                    <div class="user-data-item">
+                        <span>Nivel de actividad:</span>
+                        <span id="userActivity">Moderado (3-4 días/semana)</span>
+                    </div>
+                    <div class="user-data-item">
+                        <span>Objetivo físico:</span>
+                        <span id="userGoal">Bajar de peso</span>
+                    </div>
+                </div>
+                
+                <div class="detail-actions">
+                    <button id="downloadPdf">Descargar PDF</button>
+                    <button id="deletePlan">Eliminar plan</button>
+                </div>
+            </div>
+        </div>
+        <div class="close-detail" id="closeDetail">✕</div>
+    </div>
+
+    <script src="../JS/tusPlanes.js"></script>
+</body>
+</html>

@@ -20,27 +20,6 @@
     cursor: pointer;
 }
 
-@keyframes entradaSuave {
-    0% {
-        transform: translateY(-400px) scale(0.95);
-        opacity: 0;
-    }
-    50% {
-        transform: translateY(20px) scale(1.02);
-        opacity: 0.9;
-    }
-    70% {
-        transform: translateY(-50px);
-    }
-    85% {
-        transform: translateY(4px);
-    }
-    100% {
-        transform: translateY(0) scale(1);
-        opacity: 1;
-    }
-}
-
 .contenedorPrincipal-perfil {
     height: 500px;
     width: 500px;
@@ -53,7 +32,7 @@
     align-items: center;
     transition: transform 0.3s ease-in, box-shadow 0.3s ease-in;
     position: relative;
-    animation: entradaSuave 1s cubic-bezier(0.28, 0.84, 0.42, 1) both;
+    animation: entradaSuave 1.4s cubic-bezier(0.28, 0.84, 0.42, 1) both;
     transform-origin: center top;
 }
 
@@ -135,3 +114,214 @@
     transform: scale(0.98); 
 }
 
+/* Responsive */
+
+@media (min-width: 390px) and (max-width: 479px) {
+    .body-perfil {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .iconoRegresar {
+        width: 45px;
+        left: 15px;
+        top: 15px;
+    }
+
+    .contenedorPrincipal-perfil {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        min-height: 420px;
+        border-radius: 8%;
+        padding: 15px 0;
+        margin: 0 auto;
+    }
+
+    .contenedorPrincipal-perfil img:first-child {
+        width: 40%;
+        margin-top: 10px;
+    }
+
+    .contenedorPrincipal-perfil img:last-child {
+        right: 20px;
+        top: 20px;
+        width: 22px;
+    }
+
+    .info {
+        width: 90%;
+        font-size: 15px;
+    }
+
+    .btnCerrarSesion {
+        padding: 7px 14px;
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .body-perfil {
+        padding-top: 70px;
+    }
+
+    .iconoRegresar {
+        width: 50px;
+        left: 20px;
+        top: 20px;
+    }
+
+    .contenedorPrincipal-perfil {
+        max-width: 380px;
+        min-height: 450px;
+    }
+
+    .contenedorPrincipal-perfil img:first-child {
+        width: 35%;
+    }
+
+    .info {
+        font-size: 16px;
+    }
+
+    @keyframes entradaSuave {
+        0% { transform: translateY(-200px) scale(0.95); }
+        50% { transform: translateY(10px) scale(1.02); }
+        70% { transform: translateY(-25px); }
+        85% { transform: translateY(2px); }
+        100% { transform: translateY(0) scale(1); }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .iconoRegresar {
+        width: 55px;
+        left: 25px;
+        top: 25px;
+    }
+
+    .contenedorPrincipal-perfil {
+        width: 450px;
+        height: 450px;
+        border-radius: 8%;
+    }
+
+    .contenedorPrincipal-perfil img:first-child {
+        width: 32%;
+    }
+
+    .contenedorPrincipal-perfil img:last-child {
+        right: 28px;
+        top: 28px;
+        width: 26px;
+    }
+
+    .info {
+        font-size: 17px;
+    }
+
+    @keyframes entradaSuave {
+        0% { transform: translateY(-250px) scale(0.95); }
+        50% { transform: translateY(15px) scale(1.02); }
+        70% { transform: translateY(-30px); }
+        85% { transform: translateY(3px); }
+        100% { transform: translateY(0) scale(1); }
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1365px) {
+    .contenedorPrincipal-perfil {
+        width: 480px;
+        height: 480px;
+    }
+
+    .contenedorPrincipal-perfil img:first-child {
+        width: 30%;
+    }
+
+    .contenedorPrincipal-perfil img:last-child {
+        right: 30px;
+        top: 30px;
+        width: 28px;
+    }
+
+    .info {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1366px) and (max-width: 1558px) {
+    .contenedorPrincipal-perfil {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media (min-width: 1559px) {
+    .contenedorPrincipal-perfil {
+        width: 520px;
+        height: 520px;
+    }
+
+    .contenedorPrincipal-perfil img:first-child {
+        width: 28%;
+    }
+
+    .info {
+        font-size: 19px;
+    }
+
+    .btnCerrarSesion {
+        padding: 9px 18px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 767px) and (orientation: landscape) {
+    .body-perfil {
+        padding-top: 60px;
+        align-items: flex-start;
+    }
+
+    .contenedorPrincipal-perfil {
+        width: 90%;
+        max-width: 400px;
+        min-height: 380px;
+        margin: 20px auto;
+    }
+
+    .contenedorPrincipal-perfil img:first-child {
+        width: 25%;
+        margin-top: 5px;
+    }
+
+    .info {
+        font-size: 15px;
+    }
+}
+
+/* Animations */
+
+@keyframes entradaSuave {
+    0% {
+        transform: translateY(-400px) scale(0.95);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(20px) scale(1.02);
+        opacity: 0.9;
+    }
+    70% {
+        transform: translateY(-50px);
+    }
+    85% {
+        transform: translateY(4px);
+    }
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}

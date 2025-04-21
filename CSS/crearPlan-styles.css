@@ -1,23 +1,25 @@
-.body-crearPlan{
+.body-crearPlan {
     margin: 0;
     background-color: #EFF299;
     font-family: "Bubblegum Sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
     min-height: 100vh;
-    display: grid;
-    justify-items: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
     position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden
 }
 
-.iconoRegresar{
+.iconoRegresar {
     position: absolute;
-    left: 30px;
-    top: 30px; 
-    width: 70px; 
+    left: 20px;
+    top: 20px;
+    width: 60px;
     height: auto;
     cursor: pointer;
+    z-index: 10;
 }
 
 @keyframes animacion3DEspectacular {
@@ -42,8 +44,10 @@
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     }
 }
+
 .contenedorPrincipal-crearPlan {
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
     background-color: #A0D94A;
     border: 5px solid black;
     border-radius: 30px;
@@ -54,7 +58,8 @@
     align-items: center;
     position: relative;
     transform-style: preserve-3d;
-    animation: animacion3DEspectacular 1.2s cubic-bezier(0.25, 0.1, 0.25, 1.5) both;
+    animation: animacion3DEspectacular 1.4s cubic-bezier(0.25, 0.1, 0.25, 1.5) both;
+    margin: 20px 0;
 }
 
 .titulo-crearPlan {
@@ -72,6 +77,7 @@
 
 .fila {
     display: flex;
+    flex-direction: column;
     gap: 15px;
     width: 100%;
 }
@@ -80,7 +86,7 @@
     display: flex;
     flex-direction: column;
     gap: 3px;
-    flex: 1;
+    width: 100%;
 }
 
 label {
@@ -90,14 +96,14 @@ label {
 
 input[type="number"],
 select {
-    width: 100%; 
-    padding: 8px;
+    width: 100%;
+    padding: 10px;
     border: 2px solid black;
     border-radius: 15px;
     background-color: #EFF299;
     font-family: inherit;
-    font-size: 0.9rem;
-    box-sizing: border-box; 
+    font-size: 1rem;
+    box-sizing: border-box;
     margin-top: 5px;
 }
 
@@ -105,17 +111,17 @@ select {
     display: flex;
     justify-content: center;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 .contenedor-opciones-sexo div {
     display: flex;
     align-items: center;
-   
     gap: 5px;
 }
 
 .btnCalcular {
-    padding: 10px 35px;
+    padding: 12px 35px;
     background-color: #FF6B6B;
     border: 3px solid black;
     border-radius: 25px;
@@ -124,6 +130,8 @@ select {
     cursor: pointer;
     transition: all 0.3s;
     margin-top: 25px;
+    width: 100%;
+    max-width: 250px;
 }
 
 .btnCalcular:hover {
@@ -132,3 +140,86 @@ select {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+@media (min-width: 768px) {
+    .contenedorPrincipal-crearPlan {
+        padding: 30px;
+    }
+    
+    .fila {
+        flex-direction: row;
+    }
+    
+    .btnCalcular {
+        padding: 12px 40px;
+    }
+    
+    .iconoRegresar {
+        width: 70px;
+        left: 30px;
+        top: 30px;
+    }
+}
+
+@media (min-width: 1559px) {
+    .body-crearPlan {
+        padding: 40px;
+    }
+    
+    .contenedorPrincipal-crearPlan {
+        max-width: 550px;
+        padding: 40px;
+    }
+    
+    .titulo-crearPlan {
+        font-size: 2.2rem;
+        margin-bottom: 25px;
+    }
+    
+    label {
+        font-size: 1.1rem;
+    }
+    
+    input[type="number"],
+    select {
+        padding: 12px;
+        font-size: 1.1rem;
+    }
+    
+    .btnCalcular {
+        padding: 15px 45px;
+        font-size: 1.3rem;
+        max-width: 300px;
+    }
+    
+    .iconoRegresar {
+        width: 80px;
+        left: 50px;
+        top: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .body-crearPlan {
+        padding: 15px;
+    }
+    
+    .iconoRegresar {
+        width: 50px;
+        left: 15px;
+        top: 15px;
+    }
+    
+    .contenedorPrincipal-crearPlan {
+        padding: 20px;
+        border-radius: 25px;
+    }
+    
+    .titulo-crearPlan {
+        font-size: 1.6rem;
+    }
+    
+    .btnCalcular {
+        padding: 10px 30px;
+        font-size: 1.1rem;
+    }
+}

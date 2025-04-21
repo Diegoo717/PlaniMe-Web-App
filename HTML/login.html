@@ -14,24 +14,28 @@
 
     <img src="../Imagenes/iconoRegresar.png" alt="" onclick="location.href='index.html'">
 
-        <form>
+    <form id="form-dashboard">
+        <label id="label1">¡Bienvenido!</label>
+        
+        <label class="labels" for="email">Correo</label>
+        <input id="email" type="email">
+        <div id="msjError-correo" class="errorMessages"></div>
+        
+        <label class="labels" for="password">Contraseña</label>
+        <input id="password" type="password"> 
+        <div id="msjError-contraseña" class="errorMessages"></div>
+        
+        <button id="button" type="button"> 
+            <span>Ingresar</span>
+        </button>
+        
+        <div>
+            <p>¿No tienes una cuenta?</p>
+            <a href="register.html">HAZ CLICK AQUI</a>
+        </div>
+    </form>
 
-            <label id = "label1">¡Bienvenido!</label>
-            <label class="labels" for = "username">Correo</label>
-            <input id = "username" type="text">
-            <label class="labels" for = "password">Contraseña</label>
-            <input id = "password" type="text">
-            <button>
-                <span>Ingresar</span>
-              </button>
-            <div>
-                <p>¿No tienes una cuenta?</p>
-                <a href="register.html">HAZ CLICK AQUI</a>
-            </div>
-
-        </form>
-
-        <script src="login.js"></script>
+        <script src="../JS/login.js"></script>
 
 </body>
 </html>

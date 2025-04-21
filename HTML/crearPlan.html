@@ -19,7 +19,8 @@
         <div class="contenedor-campos">
             <div>
                 <label>Edad:</label>
-                <input type="number" min="12" max="99" placeholder="Ej: 25">
+                <input id="input-edad" type="number" min="12" max="99" placeholder="Ej: 25">
+                <div id="msjError-edad" class="errorMessages"></div>
             </div>
             
             <div class="contenedor-sexo">
@@ -34,42 +35,49 @@
                         <label for="mujer">F</label>
                     </div>
                 </div>
+                <div id="msjError-sexo" class="errorMessages"></div>
             </div>
             
             <div>
                 <label>Peso (kg):</label>
-                <input type="number" min="30" max="200" placeholder="Ej: 68">
+                <input id="input-peso" type="number" min="30" max="200" placeholder="Ej: 68">
+                <div id="msjError-peso" class="errorMessages"></div>
             </div>
             
             <div>
                 <label>Altura (cm):</label>
-                <input type="number" min="120" max="250" placeholder="Ej: 175">
+                <input id="input-altura" type="number" min="120" max="250" placeholder="Ej: 175">
+                <div id="msjError-altura" class="errorMessages"></div>
             </div>
             
             <div>
                 <label>Nivel de actividad física:</label>
-                <select class="select-crearPlan">
+                <select id="select-actividad" class="select-crearPlan">
                     <option value="" disabled selected>Selecciona...</option>
                     <option value="sedentario">Sedentario</option>
                     <option value="ligero">Ligero (1-2 días/semana)</option>
                     <option value="moderado">Moderado (3-4 días/semana)</option>
                     <option value="activo">Activo (5-6 días/semana)</option>
                 </select>
+                <div id="msjError-actividad" class="errorMessages"></div>
             </div>
             
             <div>
                 <label>Objetivo físico:</label>
-                <select class="select-crearPlan">
+                <select id="select-objetivo" class="select-crearPlan">
                     <option value="" disabled selected>Selecciona...</option>
                     <option value="bajar">Bajar de peso</option>
                     <option value="mantener">Mantener peso</option>
                     <option value="subir">Aumentar masa muscular</option>
                 </select>
+                <div id="msjError-objetivo" class="errorMessages"></div>
             </div>
         </div>
     
-        <button type="submit" class="btnCalcular">Calcular</button>
+        <button type="button" class="btnCalcular">Calcular</button>
     </form>
+
+    <script src="../JS/crearPlan.js"></script>
 
 </body>
 </html>
