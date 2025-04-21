@@ -1,16 +1,15 @@
-const crearPlan = document.querySelector("#articulo1")
-const tusPlanes = document.querySelector("#articulo2")
-const perfil = document.querySelector("#articulo3")
+const createPlan = document.querySelector("#create-plan")
+const yourPlans = document.querySelector("#your-plans")
+const profile = document.querySelector("#profile")
 
-crearPlan.addEventListener("click", function(){
-    window.location.href = 'crearPlan.html';
+createPlan.addEventListener("click", function(){
+    window.location.href = 'createPlan.html';
 })
 
-tusPlanes.addEventListener("click", function(){
-    window.location.href = 'tusPlanes.html';
+yourPlans.addEventListener("click", function(){
+    window.location.href = 'yourPlans.html';
 })
 
-perfil.addEventListener("click", function(){
-    window.location.href = 'perfil.html';
+profile.addEventListener("click", function(){
+    window.location.href = 'profile.html';
 })
-

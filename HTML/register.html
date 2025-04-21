@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/form-register-styles.css">
+    <link rel="stylesheet" href="../CSS/register.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
@@ -15,26 +15,24 @@
     <img src="../Imagenes/iconoRegresar.png" alt="" onclick="location.href='index.html'">
 
     <div class="form-container">
-        <form id="formRegister">
+        <form id="register-form">
 
-            <label id = "label1">Registro</label>
+            <label id="register-title">Registro</label>
 
+            <label class="form-labels" for="username">Nombre</label>
+            <input id="username" type="text">
+            <p id="username-error" class="error-messages">Ingresa un nombre valido</p>
+            <label class="form-labels" for="lastname">Apellidos</label>
+            <input id="lastname" type="text">
+            <p id="lastname-error" class="error-messages">Ingresa unos apellidos correctos</p>
+            <label class="form-labels" for="email">Correo</label>
+            <input id="email" type="email">
+            <p id="email-error" class="error-messages">Ingresa un correo valido</p>
+            <label class="form-labels" for="password">Contraseña</label>
+            <input id="password" type="password">
+            <p id="password-error" class="error-messages">La contraseña no debe llevar caracteres</p>
 
-            <label class="labels" for = "username">Nombre</label>
-            <input id = "username" type="text">
-            <p id="msjError-nombre" class="errorMessages">Ingresa un nombre valido</p>
-            <label class="labels" for = "lastname">Apellidos</label>
-            <input id = "lastname" type="text">
-            <p id="msjError-apellidos" class="errorMessages">Ingresa unos apellidos correctos</p>
-            <label class="labels" for = "email">Correo</label>
-            <input id = "email" type="email">
-            <p id="msjError-correo" class="errorMessages">Ingresa un correo valido</p>
-            <label class="labels" for = "password">Contraseña</label>
-            <input id = "password" type="password">
-            <p id="msjError-contraseña" class="errorMessages">La contraseña no debe llevar caracteres</p>
-
-
-            <button id="buttonRegister">
+            <button id="register-button">
                 <span>Aceptar</span>
             </button>
             <div>
@@ -45,7 +43,7 @@
         </form>
     </div>
 
-        <script src="../JS/register.js"></script>
+    <script src="../JS/register.js"></script>
 
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/form-login-styles.css">
+    <link rel="stylesheet" href="../CSS/login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
@@ -14,18 +14,18 @@
 
     <img src="../Imagenes/iconoRegresar.png" alt="" onclick="location.href='index.html'">
 
-    <form id="form-dashboard">
-        <label id="label1">¡Bienvenido!</label>
+    <form id="login-form">
+        <label id="welcome-label">¡Bienvenido!</label>
         
-        <label class="labels" for="email">Correo</label>
+        <label class="input-labels" for="email">Correo</label>
         <input id="email" type="email">
-        <div id="msjError-correo" class="errorMessages"></div>
+        <div id="email-error" class="error-messages"></div>
         
-        <label class="labels" for="password">Contraseña</label>
+        <label class="input-labels" for="password">Contraseña</label>
         <input id="password" type="password"> 
-        <div id="msjError-contraseña" class="errorMessages"></div>
+        <div id="password-error" class="error-messages"></div>
         
-        <button id="button" type="button"> 
+        <button id="login-button" type="button"> 
             <span>Ingresar</span>
         </button>
         

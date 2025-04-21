@@ -1,14 +1,15 @@
-const emailError = document.getElementById("msjError-correo");
-const passwordError = document.getElementById("msjError-contraseña");
+const emailError = document.getElementById("email-error");
+const passwordError = document.getElementById("password-error");
 
 const inputEmail = document.getElementById("email");
 const inputPassword = document.getElementById("password");
 
-const button = document.getElementById("button");
+const button = document.getElementById("login-button");
 
 let flag = false;
 
 button.addEventListener("click", function validate(event) {  
+    event.preventDefault();
     flag = true;
     resetErrors();
 
@@ -16,9 +17,9 @@ button.addEventListener("click", function validate(event) {
     passwordValidate();
     
     if(flag === true) {
-        // Primero ejecutaremos la petición al servidor
+        // First we'll make the server request
         
-        // Después redireccionamos
+        // Then redirect
         window.location.href = 'dashboard.html';
     }
 });

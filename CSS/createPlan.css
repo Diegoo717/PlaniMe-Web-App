@@ -1,4 +1,4 @@
-.body-crearPlan {
+.create-plan-body {
     margin: 0;
     background-color: #EFF299;
     font-family: "Bubblegum Sans", sans-serif;
@@ -12,7 +12,7 @@
     overflow: hidden
 }
 
-.iconoRegresar {
+.back-icon {
     position: absolute;
     left: 20px;
     top: 20px;
@@ -21,6 +21,198 @@
     cursor: pointer;
     z-index: 10;
 }
+
+.create-plan-container {
+    width: 100%;
+    max-width: 450px;
+    background-color: #A0D94A;
+    border: 5px solid black;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    box-sizing: border-box;
+    align-items: center;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: animacion3DEspectacular 1.4s cubic-bezier(0.25, 0.1, 0.25, 1.5) both;
+    margin: 20px 0;
+}
+
+.create-plan-title {
+    margin: 0 0 15px 0;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.fields-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.gender-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.gender-options {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.gender-options div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: #EFF299;
+    font-family: inherit;
+    font-size: 1rem;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+.create-plan-select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: #EFF299;
+    font-family: inherit;
+    font-size: 1rem;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+.calculate-btn {
+    padding: 12px 35px;
+    background-color: #FF6B6B;
+    border: 3px solid black;
+    border-radius: 25px;
+    font-family: inherit;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 25px;
+    width: 100%;
+    max-width: 250px;
+}
+
+.error-messages {
+    display: none;
+    color: red;
+    font-size: 17px;
+    margin: 2px 0 8px 0;
+    height: 16px;
+    width: 100%; 
+    text-align: center;
+    font-family: "Bubblegum Sans", sans-serif;
+    -webkit-text-stroke: 0.6px #1a1a1a;
+    padding: 0 10px;
+    box-sizing: border-box; 
+}
+
+/* Responsive */
+
+@media (min-width: 768px) {
+    .create-plan-container {
+        padding: 30px;
+    }
+    
+    .calculate-btn {
+        padding: 12px 40px;
+    }
+    
+    .back-icon {
+        width: 70px;
+        left: 30px;
+        top: 30px;
+    }
+}
+
+@media (min-width: 1559px) {
+    .create-plan-body {
+        padding: 40px;
+    }
+    
+    .create-plan-container {
+        max-width: 550px;
+        padding: 40px;
+    }
+    
+    .create-plan-title {
+        font-size: 2.2rem;
+        margin-bottom: 25px;
+    }
+    
+    label {
+        font-size: 1.1rem;
+    }
+    
+    input[type="number"],
+    select {
+        padding: 12px;
+        font-size: 1.1rem;
+    }
+    
+    .calculate-btn {
+        padding: 15px 45px;
+        font-size: 1.3rem;
+        max-width: 300px;
+    }
+    
+    .back-icon {
+        width: 80px;
+        left: 50px;
+        top: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .create-plan-body {
+        padding: 15px;
+    }
+    
+    .back-icon {
+        width: 50px;
+        left: 15px;
+        top: 15px;
+    }
+    
+    .create-plan-container {
+        padding: 20px;
+        border-radius: 25px;
+    }
+    
+    .create-plan-title {
+        font-size: 1.6rem;
+    }
+    
+    .calculate-btn {
+        padding: 10px 30px;
+        font-size: 1.1rem;
+    }
+}
+
+/* Animations */
 
 @keyframes animacion3DEspectacular {
     0% {
@@ -42,184 +234,5 @@
         transform: perspective(1000px) rotateX(0) rotateZ(0);
         opacity: 1;
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-    }
-}
-
-.contenedorPrincipal-crearPlan {
-    width: 100%;
-    max-width: 450px;
-    background-color: #A0D94A;
-    border: 5px solid black;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    padding: 25px;
-    box-sizing: border-box;
-    align-items: center;
-    position: relative;
-    transform-style: preserve-3d;
-    animation: animacion3DEspectacular 1.4s cubic-bezier(0.25, 0.1, 0.25, 1.5) both;
-    margin: 20px 0;
-}
-
-.titulo-crearPlan {
-    margin: 0 0 15px 0;
-    font-size: 1.8rem;
-    text-align: center;
-}
-
-.contenedor-campos {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.fila {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 100%;
-}
-
-.campo {
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-    width: 100%;
-}
-
-label {
-    font-weight: bold;
-    font-size: 0.9rem;
-}
-
-input[type="number"],
-select {
-    width: 100%;
-    padding: 10px;
-    border: 2px solid black;
-    border-radius: 15px;
-    background-color: #EFF299;
-    font-family: inherit;
-    font-size: 1rem;
-    box-sizing: border-box;
-    margin-top: 5px;
-}
-
-.contenedor-opciones-sexo {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-
-.contenedor-opciones-sexo div {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.btnCalcular {
-    padding: 12px 35px;
-    background-color: #FF6B6B;
-    border: 3px solid black;
-    border-radius: 25px;
-    font-family: inherit;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: all 0.3s;
-    margin-top: 25px;
-    width: 100%;
-    max-width: 250px;
-}
-
-.btnCalcular:hover {
-    transform: scale(1.05);
-    background-color: #FF8E8E;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-@media (min-width: 768px) {
-    .contenedorPrincipal-crearPlan {
-        padding: 30px;
-    }
-    
-    .fila {
-        flex-direction: row;
-    }
-    
-    .btnCalcular {
-        padding: 12px 40px;
-    }
-    
-    .iconoRegresar {
-        width: 70px;
-        left: 30px;
-        top: 30px;
-    }
-}
-
-@media (min-width: 1559px) {
-    .body-crearPlan {
-        padding: 40px;
-    }
-    
-    .contenedorPrincipal-crearPlan {
-        max-width: 550px;
-        padding: 40px;
-    }
-    
-    .titulo-crearPlan {
-        font-size: 2.2rem;
-        margin-bottom: 25px;
-    }
-    
-    label {
-        font-size: 1.1rem;
-    }
-    
-    input[type="number"],
-    select {
-        padding: 12px;
-        font-size: 1.1rem;
-    }
-    
-    .btnCalcular {
-        padding: 15px 45px;
-        font-size: 1.3rem;
-        max-width: 300px;
-    }
-    
-    .iconoRegresar {
-        width: 80px;
-        left: 50px;
-        top: 50px;
-    }
-}
-
-@media (max-width: 480px) {
-    .body-crearPlan {
-        padding: 15px;
-    }
-    
-    .iconoRegresar {
-        width: 50px;
-        left: 15px;
-        top: 15px;
-    }
-    
-    .contenedorPrincipal-crearPlan {
-        padding: 20px;
-        border-radius: 25px;
-    }
-    
-    .titulo-crearPlan {
-        font-size: 1.6rem;
-    }
-    
-    .btnCalcular {
-        padding: 10px 30px;
-        font-size: 1.1rem;
     }
 }

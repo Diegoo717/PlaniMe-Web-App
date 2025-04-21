@@ -1,4 +1,4 @@
-.body-perfil{
+.profile-body {
     margin: 0;
     background-color: #EFF299;
     font-family: "Bubblegum Sans", sans-serif;
@@ -11,16 +11,16 @@
     position: relative;
 }
 
-.iconoRegresar{
+.back-icon {
     position: absolute;
     left: 30px;
-    top: 30px; 
-    width: 70px; 
+    top: 30px;
+    width: 70px;
     height: auto;
     cursor: pointer;
 }
 
-.contenedorPrincipal-perfil {
+.profile-container {
     height: 500px;
     width: 500px;
     background-color: #A0D94A;
@@ -32,105 +32,105 @@
     align-items: center;
     transition: transform 0.3s ease-in, box-shadow 0.3s ease-in;
     position: relative;
-    animation: entradaSuave 1.4s cubic-bezier(0.28, 0.84, 0.42, 1) both;
+    animation: smoothEntry 1.4s cubic-bezier(0.28, 0.84, 0.42, 1) both;
     transform-origin: center top;
 }
 
-.body-perfil .contenedorPrincipal-perfil {
+.profile-body .profile-container {
     animation-delay: 0.2s;
 }
 
-.fila1 {
+.row1 {
     grid-row: 1;
-    width: 100%; 
+    width: 100%;
     display: flex;
-    justify-content: center; 
-    align-items: flex-start; 
-    position: relative; 
-    padding-top: 20px; 
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    padding-top: 20px;
 }
 
-.contenedorPrincipal-perfil img:first-child {
+.profile-container img:first-child {
     margin-top: 20px;
     height: auto;
     width: 30%;
 }
 
-.contenedorPrincipal-perfil img:last-child {
+.profile-container img:last-child {
     position: absolute;
-    right: 35px; 
-    top: 35px; 
-    width: 30px; 
+    right: 35px;
+    top: 35px;
+    width: 30px;
     height: auto;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
-.fila2 {
+.row2 {
     grid-row: 2;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100%; 
+    width: 100%;
 }
 
 .info {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%; 
+    width: 80%;
     font-size: 18px;
 }
 
-.contenidoDinamico{
+.dynamic-content {
     margin-left: 10px;
 }
 
-.fila3 {
+.row3 {
     grid-row: 3;
     display: flex;
     align-items: center;
 }
 
-.btnCerrarSesion {
-    background-color: transparent; 
-    color: #333; 
-    border: 1px solid #333; 
-    border-radius: 4px; 
-    padding: 8px 16px; 
+.logout-btn {
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 8px 16px;
     font-size: 14px;
-    cursor: pointer; 
-    transition: all 0.2s ease; 
+    cursor: pointer;
+    transition: all 0.2s ease;
     font-family: "Bubblegum Sans", sans-serif;
 }
 
-.btnCerrarSesion:hover {
-    background-color: rgba(255, 0, 0, 0.1); 
-    color: #d32f2f; 
-    border-color: #d32f2f; 
+.logout-btn:hover {
+    background-color: rgba(255, 0, 0, 0.1);
+    color: #d32f2f;
+    border-color: #d32f2f;
 }
 
-.btnCerrarSesion:active {
-    transform: scale(0.98); 
+.logout-btn:active {
+    transform: scale(0.98);
 }
 
 /* Responsive */
 
 @media (min-width: 390px) and (max-width: 479px) {
-    .body-perfil {
+    .profile-body {
         display: flex;
         justify-content: center;
         align-items: center;
         min-height: 100vh;
     }
 
-    .iconoRegresar {
+    .back-icon {
         width: 45px;
         left: 15px;
         top: 15px;
     }
 
-    .contenedorPrincipal-perfil {
+    .profile-container {
         width: 100%;
         max-width: 350px;
         height: auto;
@@ -140,12 +140,12 @@
         margin: 0 auto;
     }
 
-    .contenedorPrincipal-perfil img:first-child {
+    .profile-container img:first-child {
         width: 40%;
         margin-top: 10px;
     }
 
-    .contenedorPrincipal-perfil img:last-child {
+    .profile-container img:last-child {
         right: 20px;
         top: 20px;
         width: 22px;
@@ -156,29 +156,29 @@
         font-size: 15px;
     }
 
-    .btnCerrarSesion {
+    .logout-btn {
         padding: 7px 14px;
         font-size: 13px;
     }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
-    .body-perfil {
+    .profile-body {
         padding-top: 70px;
     }
 
-    .iconoRegresar {
+    .back-icon {
         width: 50px;
         left: 20px;
         top: 20px;
     }
 
-    .contenedorPrincipal-perfil {
+    .profile-container {
         max-width: 380px;
         min-height: 450px;
     }
 
-    .contenedorPrincipal-perfil img:first-child {
+    .profile-container img:first-child {
         width: 35%;
     }
 
@@ -186,7 +186,7 @@
         font-size: 16px;
     }
 
-    @keyframes entradaSuave {
+    @keyframes smoothEntry {
         0% { transform: translateY(-200px) scale(0.95); }
         50% { transform: translateY(10px) scale(1.02); }
         70% { transform: translateY(-25px); }
@@ -196,24 +196,23 @@
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-
-    .iconoRegresar {
+    .back-icon {
         width: 55px;
         left: 25px;
         top: 25px;
     }
 
-    .contenedorPrincipal-perfil {
+    .profile-container {
         width: 450px;
         height: 450px;
         border-radius: 8%;
     }
 
-    .contenedorPrincipal-perfil img:first-child {
+    .profile-container img:first-child {
         width: 32%;
     }
 
-    .contenedorPrincipal-perfil img:last-child {
+    .profile-container img:last-child {
         right: 28px;
         top: 28px;
         width: 26px;
@@ -223,7 +222,7 @@
         font-size: 17px;
     }
 
-    @keyframes entradaSuave {
+    @keyframes smoothEntry {
         0% { transform: translateY(-250px) scale(0.95); }
         50% { transform: translateY(15px) scale(1.02); }
         70% { transform: translateY(-30px); }
@@ -233,16 +232,16 @@
 }
 
 @media (min-width: 1024px) and (max-width: 1365px) {
-    .contenedorPrincipal-perfil {
+    .profile-container {
         width: 480px;
         height: 480px;
     }
 
-    .contenedorPrincipal-perfil img:first-child {
+    .profile-container img:first-child {
         width: 30%;
     }
 
-    .contenedorPrincipal-perfil img:last-child {
+    .profile-container img:last-child {
         right: 30px;
         top: 30px;
         width: 28px;
@@ -254,19 +253,19 @@
 }
 
 @media (min-width: 1366px) and (max-width: 1558px) {
-    .contenedorPrincipal-perfil {
+    .profile-container {
         width: 500px;
         height: 500px;
     }
 }
 
 @media (min-width: 1559px) {
-    .contenedorPrincipal-perfil {
+    .profile-container {
         width: 520px;
         height: 520px;
     }
 
-    .contenedorPrincipal-perfil img:first-child {
+    .profile-container img:first-child {
         width: 28%;
     }
 
@@ -274,26 +273,26 @@
         font-size: 19px;
     }
 
-    .btnCerrarSesion {
+    .logout-btn {
         padding: 9px 18px;
         font-size: 15px;
     }
 }
 
 @media (max-width: 767px) and (orientation: landscape) {
-    .body-perfil {
+    .profile-body {
         padding-top: 60px;
         align-items: flex-start;
     }
 
-    .contenedorPrincipal-perfil {
+    .profile-container {
         width: 90%;
         max-width: 400px;
         min-height: 380px;
         margin: 20px auto;
     }
 
-    .contenedorPrincipal-perfil img:first-child {
+    .profile-container img:first-child {
         width: 25%;
         margin-top: 5px;
     }
@@ -305,7 +304,7 @@
 
 /* Animations */
 
-@keyframes entradaSuave {
+@keyframes smoothEntry {
     0% {
         transform: translateY(-400px) scale(0.95);
         opacity: 0;

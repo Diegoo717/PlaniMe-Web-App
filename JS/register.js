@@ -1,15 +1,15 @@
-const nameError = document.getElementById("msjError-nombre");
-const surNamesError = document.getElementById("msjError-apellidos");
-const emailError = document.getElementById("msjError-correo");
-const passwordError = document.getElementById("msjError-contraseña");
+const nameError = document.getElementById("username-error");
+const surNamesError = document.getElementById("lastname-error");
+const emailError = document.getElementById("email-error");
+const passwordError = document.getElementById("password-error");
 
 const inputName = document.getElementById("username");
 const inputSurnames = document.getElementById("lastname");
 const inputEmail = document.getElementById("email");
 const inputPassword = document.getElementById("password");
 
-const button = document.getElementById("buttonRegister");
-const form = document.getElementById("formRegister");
+const button = document.getElementById("register-button");
+const form = document.getElementById("register-form");
 
 let flag = false;
 
@@ -25,9 +25,9 @@ button.addEventListener("click", function validate(event){
     passwordValidate();
     
     if(flag === true){
-        // Primero ejecutaremos la peticion al servidor
+        // First we'll make the server request
         
-        // Despues redireccionamos
+        // Then redirect
         window.location.href = 'login.html';
     }
 });

@@ -21,7 +21,7 @@ body {
     overflow: hidden;
 }
 
-.iconoRegresar{
+.back-icon {
     position: absolute;
     left: 30px;
     top: 30px; 
@@ -90,14 +90,14 @@ button {
 
 @keyframes reveal {
     0% {
-      transform: translateX(1400px); 
+        transform: translateX(1400px); 
     }
     20% {
-      transform: translateX(1200px) rotate(-6deg); 
+        transform: translateX(1200px) rotate(-6deg); 
     }
     40% {
         transform: translateX(1200px) rotate(-6deg); 
-      }
+    }
     60% {
         transform: translateX(1400px) rotate(0deg);  
     }
@@ -105,30 +105,9 @@ button {
         transform: translateX(1400px) rotate(0deg);     
     }
     100% {
-      transform: translateX(0);
+        transform: translateX(0);
     }
-  }
-
-  @keyframes revealForMobile {
-    0% {
-      transform: translateX(1400px); 
-    }
-    20% {
-      transform: translateX(1200px) rotate(-6deg); 
-    }
-    40% {
-        transform: translateX(1200px) rotate(-6deg); 
-      }
-    60% {
-        transform: translateX(1400px) rotate(0deg);  
-    }
-    90%{
-        transform: translateX(1400px) rotate(0deg);     
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
+}
 
 .plan-card:hover {
     transform: translateY(-15px);
@@ -383,7 +362,7 @@ button {
         flex-direction: column;
     }
 
-    .iconoRegresar{
+    .back-icon {
         position: absolute;
         left: 15px;
         top: 15px; 
@@ -447,8 +426,6 @@ button {
         }
     }
 
-    /* Modal */
-
     .detail-content {
         flex-direction: column;
     }
@@ -456,7 +433,6 @@ button {
     .pdf-view {
         max-height: 28%;
     }
-
 }
 
 @media (min-width: 430px) and (max-width: 767px) {
@@ -472,7 +448,7 @@ button {
         flex-direction: column;
     }
 
-    .iconoRegresar{
+    .back-icon {
         position: absolute;
         left: 15px;
         top: 15px; 
@@ -547,7 +523,7 @@ button {
         flex-direction: column;
     }
 
-    .iconoRegresar{
+    .back-icon {
         position: absolute;
         left: 20px;
         top: 20px; 
@@ -556,7 +532,7 @@ button {
         cursor: pointer;
     }
     
-    .search-filter{
+    .search-filter {
         margin-top: 30px;
     }
 
@@ -617,7 +593,7 @@ button {
         margin-left: 50px;
     }
 
-    .iconoRegresar{
+    .back-icon {
         position: absolute;
         left: 25px;
         top: 25px; 
