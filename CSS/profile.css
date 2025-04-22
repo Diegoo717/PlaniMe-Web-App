@@ -87,6 +87,10 @@
     margin-left: 10px;
 }
 
+.dynamic-content2 {
+    margin-left: 10px;
+}
+
 .row3 {
     grid-row: 3;
     display: flex;

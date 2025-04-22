@@ -20,7 +20,28 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .then(data => {
         console.log("Sesión válida:", data);
-        document.body.style.visibility = 'visible';
+        // Luego, obtenemos los datos del perfil
+        fetch("http://localhost:5000/api/protected/profile", {
+            method: "GET",
+            headers: {
+                Authorization: `Bearer ${token}`
+            }
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("No se pudo obtener el perfil");
+            }
+            return response.json();
+        })
+        .then(profileData => {
+            console.log("Datos del perfil:", profileData);
+            
+            document.body.style.visibility = 'visible';
+            const fullName = `${profileData.firstName} ${profileData.lastName}`;
+            document.querySelector(".dynamic-content").innerText = fullName; 
+            document.querySelector(".dynamic-content2").innerText = " " + profileData.email; 
+            
+        })
     })
     .catch(error => {
         console.error("Error de sesión:", error.message);
