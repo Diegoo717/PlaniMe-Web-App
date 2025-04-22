@@ -16,13 +16,40 @@ button.addEventListener("click", function validate(event) {
     emailValidate();
     passwordValidate();
     
-    if(flag === true) {
-        // First we'll make the server request
-        
-        // Then redirect
-        window.location.href = 'dashboard.html';
+    if (flag === true) {
+        const data = {
+            email: inputEmail.value.trim(),
+            password: inputPassword.value
+        };
+
+        fetch('http://localhost:5000/api/login', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => {
+            if (!response.ok) {
+                return response.json().then(err => {
+                    throw new Error(err.error || "Login failed");
+                });
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log("Login succesful:", data);
+            localStorage.setItem("token", data.token);
+            window.location.href = 'dashboard.html';
+        })
+        .catch(error => {
+            console.error("login error:", error.message);
+            emailError.textContent = error.message;
+            emailError.style.display = "inline-block";
+        });
     }
 });
+
 
 function resetErrors() {
     emailError.style.display = "none";

@@ -25,11 +25,39 @@ button.addEventListener("click", function validate(event){
     passwordValidate();
     
     if(flag === true){
-        // First we'll make the server request
-        
-        // Then redirect
-        window.location.href = 'login.html';
+        const data = {
+            firstName: inputName.value.trim(),
+            lastName: inputSurnames.value.trim(),
+            email: inputEmail.value.trim(),
+            password: inputPassword.value
+        };
+    
+        fetch('http://localhost:5000/api/register', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => {
+            if (!response.ok) {
+                return response.json().then(err => {
+                    throw new Error(err.error || "Registration failed");
+                });
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log("Successful registration:", data);
+            window.location.href = 'login.html';
+        })
+        .catch(error => {
+            console.error("Registration error:", error.message);
+            emailError.textContent = error.message;
+            emailError.style.display = "inline-block";
+        });
     }
+    
 });
 
 function resetErrors() {

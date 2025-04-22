@@ -9,6 +9,7 @@
     justify-items: center;
     align-items: center;
     position: relative;
+    visibility: hidden;
 }
 
 .back-icon {
