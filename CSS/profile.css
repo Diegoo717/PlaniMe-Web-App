@@ -19,6 +19,11 @@
     width: 70px;
     height: auto;
     cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.back-icon:hover{
+  scale: 0.8;
 }
 
 .profile-container {
@@ -95,6 +100,33 @@
     grid-row: 3;
     display: flex;
     align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.reset-password-btn {
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: "Bubblegum Sans", sans-serif;
+    width: 80%;
+    max-width: 200px;
+}
+
+.reset-password-btn:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+    color: #0069d9;
+    border-color: #0069d9;
+}
+
+.reset-password-btn:active {
+    transform: scale(0.98);
 }
 
 .logout-btn {
@@ -107,6 +139,8 @@
     cursor: pointer;
     transition: all 0.2s ease;
     font-family: "Bubblegum Sans", sans-serif;
+    width: 80%;
+    max-width: 200px;
 }
 
 .logout-btn:hover {
@@ -118,6 +152,8 @@
 .logout-btn:active {
     transform: scale(0.98);
 }
+
+
 
 /* Responsive */
 

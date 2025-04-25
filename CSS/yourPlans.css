@@ -29,6 +29,11 @@ body {
     width: 70px; 
     height: auto;
     cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.back-icon:hover{
+  scale: 0.8;
 }
 
 .container {
@@ -346,6 +351,110 @@ button {
 
 .detail-actions button:last-child:hover {
     background-color: rgb(216, 7, 7);
+}
+
+/* Modal */ 
+
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 25px;
+    border: solid 4px black;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.modal h3 {
+    margin-top: 0;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.modal p {
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.modal-btn {
+    border: solid 2px black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.confirm-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.confirm-btn:hover {
+    background-color: #c0392b;
+}
+
+.cancel-btn {
+    background-color: #ecf0f1;
+    color: #333;
+}
+
+.cancel-btn:hover {
+    background-color: #bdc3c7;
+}
+
+.plan-status.expired {
+    background-color: #e74c3c;
+}
+
+.search-filter {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.search-filter input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    border: 3px solid black;
+}
+
+.search-filter select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+    border: 3px solid black;
+}
+
+.no-plans-message {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+    font-size: 1.1em;
 }
 
 /* Responsive */

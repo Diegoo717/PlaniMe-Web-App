@@ -50,7 +50,7 @@ const body = document.querySelector(".create-plan-body");
 const button = document.querySelector(".calculate-btn");
 let flag = false;
 
-button.addEventListener("click", function validate(event) {
+button.addEventListener("click", async function(event) {
     event.preventDefault();
     flag = true;
     resetErrors();
@@ -62,10 +62,74 @@ button.addEventListener("click", function validate(event) {
     activityValidate();
     goalValidate();
     
-    if(flag === true) {
-        window.location.href = 'dashboard.html';
+    if(flag === false) return;
+
+    const token = localStorage.getItem("token");
+    if(!token) {
+        window.location.href = "login.html";
+        return;
+    }
+
+    const formData = {
+        age: inputAge.value.trim(),
+        gender: inputGenderM.checked ? "m" : "f",
+        weight: parseFloat(inputWeight.value.trim()),
+        height: parseFloat(inputHeight.value.trim()),
+        activityLevel: inputActivity.value,
+        goal: convertGoalValue(inputGoal.value)
+    };
+
+    try {
+        button.disabled = true;
+        button.textContent = "Generando...";
+
+        const response = await fetch("http://localhost:5000/api/protected/generatePlan", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "Authorization": `Bearer ${token}`
+            },
+            body: JSON.stringify(formData)
+        });
+
+        if(!response.ok) {
+            const errorData = await response.json();
+            throw new Error(errorData.error || "Error al generar el plan");
+        }
+
+        const data = await response.json();
+
+        showSuccessModal();
+
+    } catch (error) {
+        console.error("Error:", error);
+        showError(goalError, error.message || "Ocurrió un error al crear el plan");
+    } finally {
+        button.disabled = false;
+        button.textContent = "Calcular";
     }
 });
+
+function convertGoalValue(goal) {
+    const goalsMap = {
+        "bajar": "perder",
+        "mantener": "mantener",
+        "subir": "aumentar"
+    };
+    return goalsMap[goal] || goal;
+}
+
+function showSuccessModal() {
+    const modal = document.getElementById("successModal");
+    const acceptBtn = document.getElementById("modalAcceptBtn");
+    
+    modal.style.display = "block";
+    
+    acceptBtn.addEventListener("click", function() {
+        modal.style.display = "none";
+        window.location.href = "dashboard.html";
+    }, { once: true }); // 
+}
 
 function resetErrors() {
     const errors = [ageError, genderError, weightError, heightError, activityError, goalError];

@@ -46,8 +46,8 @@ background-color: #79A637;
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding-left: 60px;
-padding-right: 100px;
+padding-left: 10%;
+padding-right: 120px;
 margin: 20px;
 margin-left: 24px;
 margin-right: 24px;
@@ -172,6 +172,15 @@ background-color: #A0D94A;
 margin-top: 50px;
 border-top: 5px solid black;
 border-bottom: 5px solid black;
+height: 70vh;
+display: flex;
+align-items: center;
+}
+
+#article2{
+  height: 70vh;
+display: flex;
+align-items: center;
 }
 
 #article2 section p{
@@ -179,6 +188,9 @@ color: black;
 }
 
 #article3{
+  height: 70vh;
+display: flex;
+align-items: center;
 background-color: #A0D94A;
 margin-top: 50px;
 border-top: 5px solid black;
