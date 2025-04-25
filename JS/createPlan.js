@@ -206,3 +206,114 @@ function showError(element, message) {
         element.style.textAlign = "center";
     }
 }
+
+const styleElement = document.createElement('style');
+styleElement.textContent = `
+  .falling-phrase {
+    position: fixed;
+    color: black;
+    font-family: "Bubblegum Sans", sans-serif;
+    font-weight: bold;
+    z-index: 1000;
+    white-space: nowrap;
+    animation: fallDown linear forwards;
+    opacity: 0.9;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.7);
+    top: -50px; /* Start above the viewport */
+  }
+
+  @keyframes fallDown {
+    0% {
+      transform: translateY(0) rotate(var(--rotation));
+      opacity: 0;
+    }
+    10% {
+      opacity: 0.9;
+    }
+    90% {
+      opacity: 0.9;
+    }
+    100% {
+      transform: translateY(calc(100vh + 100px)) rotate(var(--rotation));
+      opacity: 0;
+    }
+  }
+`;
+document.head.appendChild(styleElement);
+
+const motivationalPhrases = [
+    "¡Tú puedes!",
+    "El cambio comienza hoy",
+    "Alimenta tu cuerpo, nutre tu alma",
+    "Pequeños cambios, grandes resultados",
+    "Cada comida es una oportunidad",
+    "Un día a la vez",
+    "Eres más fuerte de lo que crees",
+    "Tu salud es tu riqueza",
+    "Buena nutrición = Buena vida",
+    "Hoy es tu día",
+    "Persistencia sobre perfección",
+    "Prioriza tu bienestar",
+    "La constancia da resultados",
+    "El éxito es la suma de pequeños esfuerzos",
+    "Alimenta tu determinación",
+    "Respeta tu cuerpo",
+    "Cada bocado cuenta",
+    "Mejora tu vida, un plato a la vez",
+    "Tu mejor versión te espera",
+    "El hábito crea el cambio",
+    "La disciplina es libertad",
+    "Celebra cada progreso",
+    "Tu cuerpo es tu hogar",
+    "El autocuidado no es egoísmo",
+    "Progreso, no perfección",
+    "Escucha a tu cuerpo",
+    "Hoy elijo salud",
+    "La paciencia es clave",
+    "Confía en el proceso",
+    "Mente sana en cuerpo sano",
+    "El respeto propio comienza aquí",
+    "Toma decisiones que te enorgullezcan",
+    "El amor propio se demuestra con acciones",
+    "Tú eres tu mejor inversión",
+    "La energía sigue al enfoque",
+    "Hoy es un nuevo comienzo",
+    "La consistencia transforma",
+    "Eres capaz de más de lo que imaginas",
+    "La salud es el mejor regalo",
+    "Cada elección construye tu futuro"
+  ];
+
+function createFallingPhrase() {
+  const phrase = document.createElement('div');
+  phrase.className = 'falling-phrase';
+
+  const randomPhrase = motivationalPhrases[Math.floor(Math.random() * motivationalPhrases.length)];
+  phrase.textContent = randomPhrase;
+
+  const fontSize = (Math.random() * 1.5 + 1).toFixed(1);
+  phrase.style.fontSize = `${fontSize}rem`;
+
+  const horizontalPosition = Math.random() * 85; 
+  phrase.style.left = `${horizontalPosition}%`;
+
+  const rotation = Math.random() * 30 - 15;
+  phrase.style.setProperty('--rotation', `${rotation}deg`);
+
+  const duration = Math.random() * 4 + 8;
+  phrase.style.animationDuration = `${duration}s`;
+
+  document.body.appendChild(phrase);
+
+  setTimeout(() => {
+    phrase.remove();
+  }, duration * 1000);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  setTimeout(() => {
+    createFallingPhrase();
+
+    setInterval(createFallingPhrase, 15000);
+  }, 6000);
+});
