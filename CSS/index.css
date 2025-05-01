@@ -28,7 +28,7 @@ font-size: 19px;
 transition: transform 0.3s ease;
 }
 
-header nav a:hover{
+a:hover{
 transform: scale(1.5);
 }
 

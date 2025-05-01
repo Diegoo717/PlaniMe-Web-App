@@ -125,6 +125,10 @@ select {
     max-width: 250px;
 }
 
+.calculate-btn:hover {
+    transform: scale(1.05);
+}
+
 .error-messages {
     display: none;
     color: red;

@@ -128,7 +128,7 @@ function showSuccessModal() {
     acceptBtn.addEventListener("click", function() {
         modal.style.display = "none";
         window.location.href = "dashboard.html";
-    }, { once: true }); // 
+    }, { once: true }); 
 }
 
 function resetErrors() {
@@ -313,7 +313,6 @@ function createFallingPhrase() {
 document.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
     createFallingPhrase();
-
-    setInterval(createFallingPhrase, 12000);
+    setInterval(createFallingPhrase, 8000);
   }, 6000);
 });
