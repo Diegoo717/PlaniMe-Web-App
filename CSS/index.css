@@ -298,6 +298,15 @@ footer{
   color: white;
 }
 
+.div-footer-index{
+  width: 30%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+flex-direction: column;
+}
+
 /* Responsive */
 
 @media (min-width: 481px) and (max-width: 600px) {

@@ -314,6 +314,6 @@ document.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
     createFallingPhrase();
 
-    setInterval(createFallingPhrase, 15000);
+    setInterval(createFallingPhrase, 12000);
   }, 6000);
 });
