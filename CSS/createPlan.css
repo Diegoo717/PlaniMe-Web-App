@@ -44,7 +44,7 @@ body{
     align-items: center;
     position: relative;
     transform-style: preserve-3d;
-    animation: animacion3DEspectacular 1.4s cubic-bezier(0.25, 0.1, 0.25, 1.5) both;
+    animation: animacion3DEspectacular 1.6s cubic-bezier(0.25, 0.1, 0.25, 1.5) both;
     margin: 20px 0;
 }
 
@@ -123,6 +123,10 @@ select {
     margin-top: 25px;
     width: 100%;
     max-width: 250px;
+}
+
+.calculate-btn:hover {
+    transform: scale(1.05);
 }
 
 .error-messages {
