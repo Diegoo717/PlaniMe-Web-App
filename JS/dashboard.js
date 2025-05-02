@@ -52,6 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
 const createPlan = document.querySelector("#create-plan");
 const yourPlans = document.querySelector("#your-plans");
 const profile = document.querySelector("#profile");
+const yourProgress = document.querySelector("#progress");
 
 createPlan.addEventListener("click", function() {
     window.location.href = 'createPlan.html';
@@ -63,4 +64,8 @@ yourPlans.addEventListener("click", function() {
 
 profile.addEventListener("click", function() {
     window.location.href = 'profile.html';
+});
+
+yourProgress.addEventListener("click", function() {
+    window.location.href = 'yourProgress.html';
 });
