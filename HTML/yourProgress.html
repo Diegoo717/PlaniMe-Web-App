@@ -35,7 +35,6 @@
             <div class="registros-container">
                 <h2>Historial de registros</h2>
                 <div class="registros-list" id="registros-list">
-                    <!-- Los registros se generarán dinámicamente -->
                 </div>
             </div>
         </div>
@@ -77,6 +76,18 @@
             <div class="modal-buttons">
                 <button id="guardar-objetivo-btn" class="guardar-btn">Guardar</button>
                 <button id="cancelar-objetivo-btn" class="cancelar-btn">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para confirmar eliminación -->
+    <div id="confirmModal" class="modal">
+        <div class="modal-content">
+            <h2>Confirmar eliminación</h2>
+            <p>¿Estás seguro que deseas eliminar este registro?</p>
+            <div class="modal-buttons">
+               <button id="confirm-delete-btn" class="guardar-btn">Eliminar</button>
+               <button id="cancel-delete-btn" class="cancelar-btn">Cancelar</button>
             </div>
         </div>
     </div>

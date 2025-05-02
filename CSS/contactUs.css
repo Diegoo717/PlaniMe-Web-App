@@ -44,7 +44,7 @@ body {
     align-items: center;
     position: relative;
     transform-style: preserve-3d;
-    animation: spinInAnimation 1.4s cubic-bezier(0.25, 0.1, 0.25, 1.5) both;
+    animation: spinInAnimation 2s cubic-bezier(0.25, 0.1, 0.25, 1.5) both;
     margin: 20px 0;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }

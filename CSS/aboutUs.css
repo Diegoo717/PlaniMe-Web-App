@@ -40,7 +40,7 @@
     align-items: center;
     position: relative;
     transform-style: preserve-3d;
-    animation: walkInAnimation 1.2s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+    animation: walkInAnimation 1.5s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
     margin: 20px 0;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     padding: 30px;
@@ -219,6 +219,7 @@
 @media (max-width: 480px) {
     .about-body {
         padding: 15px;
+        align-items: flex-start; /* Cambiado de center a flex-start para mejor manejo del scroll */
     }
     
     .back-icon {
@@ -230,6 +231,10 @@
     .about-container {
         padding: 20px;
         border-radius: 25px;
+        min-height: auto; 
+        height: auto; 
+        max-height: 90vh; 
+        overflow-y: auto; 
     }
     
     .about-title {
@@ -239,5 +244,13 @@
     
     .values-container {
         grid-template-columns: 1fr;
+    }
+    
+    .content-container {
+        gap: 15px; 
+    }
+    
+    .section-box {
+        padding: 15px; 
     }
 }
