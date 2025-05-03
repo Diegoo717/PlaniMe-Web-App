@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
 
-    fetch("http://localhost:5000/api/protected/session", {
+    fetch("http://85.239.244.71:5000/api/protected/session", {
         method: "GET",
         headers: {
             Authorization: `Bearer ${token}`
@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function loadUserPlans(token) {
     document.body.style.overflow = "hidden"; 
-    fetch("http://localhost:5000/api/protected/getPlansByID", {
+    fetch("http://85.239.244.71:5000/api/protected/getPlansByID", {
         method: "GET",
         headers: {
             Authorization: `Bearer ${token}`
@@ -263,7 +263,7 @@ function deletePlan(planId, token) {
 function executeDeletePlan() {
     if (!currentPlanToDelete || !currentTokenForDelete) return;
     
-    fetch(`http://localhost:5000/api/protected/deletePlanByID/${currentPlanToDelete}`, {
+    fetch(`http://85.239.244.71:5000/api/protected/deletePlanByID/${currentPlanToDelete}`, {
         method: 'DELETE',
         headers: {
             'Authorization': `Bearer ${currentTokenForDelete}`,

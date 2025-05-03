@@ -32,7 +32,7 @@ button.addEventListener("click", function validate(event){
             password: inputPassword.value
         };
     
-        fetch('http://localhost:5000/api/register', {
+        fetch('http://85.239.244.71:5000/api/register', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
