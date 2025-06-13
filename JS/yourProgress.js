@@ -72,7 +72,7 @@ let weightRecords = [];
                     method: "GET",
                     headers: {
                         Authorization: `Bearer ${token}`
-                    }
+                    },
                 });
                 
                 if (!response.ok) {
