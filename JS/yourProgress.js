@@ -27,7 +27,7 @@ let weightRecords = [];
 
         async function checkSession(token) {
             try {
-                const response = await fetch("http://85.239.244.71:5000/api/protected/session", {
+                const response = await fetch("http://localhost:5000/api/protected/session", {
                     method: "GET",
                     headers: {
                         Authorization: `Bearer ${token}`
@@ -68,7 +68,7 @@ let weightRecords = [];
 
         async function getAllWeightRecords(token) {
             try {
-                const response = await fetch("http://85.239.244.71:5000/api/protected/getAllWeightR", {
+                const response = await fetch("http://localhost:5000/api/protected/getAllWeightR", {
                     method: "GET",
                     headers: {
                         Authorization: `Bearer ${token}`
@@ -89,7 +89,7 @@ let weightRecords = [];
 
         async function getWeightGoal(token) {
             try {
-                const response = await fetch("http://85.239.244.71:5000/api/protected/getWeightGoal", {
+                const response = await fetch("http://locahost:5000/api/protected/getWeightGoal", {
                     method: "GET",
                     headers: {
                         Authorization: `Bearer ${token}`
@@ -191,7 +191,7 @@ let weightRecords = [];
                 const fecha = new Date(fechaInput.value);
                 const fechaCorregida = new Date(fecha.getTime() + Math.abs(fecha.getTimezoneOffset() * 60000));
                 
-                const response = await fetch("http://85.239.244.71:5000/api/protected/setWeightRecord", {
+                const response = await fetch("http://localhost:5000/api/protected/setWeightRecord", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
@@ -235,7 +235,7 @@ let weightRecords = [];
                 
                 objetivoError.textContent = '';
                 
-                const response = await fetch("http://85.239.244.71:5000/api/protected/setWeightGoal", {
+                const response = await fetch("http://localhost:5000/api/protected/setWeightGoal", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
@@ -280,7 +280,7 @@ async function executeDelete() {
         
         if (!recordId) return;
         
-        const response = await fetch(`http://85.239.244.71:5000/api/protected/deleteWeightR/${recordId}`, {
+        const response = await fetch(`http://localhost:5000/api/protected/deleteWeightR/${recordId}`, {
             method: "DELETE",
             headers: {
                 "Content-Type": "application/json",
