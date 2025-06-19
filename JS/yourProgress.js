@@ -89,7 +89,7 @@ let weightRecords = [];
 
         async function getWeightGoal(token) {
             try {
-                const response = await fetch("http://locahost:5000/api/protected/getWeightGoal", {
+                const response = await fetch("http://localhost:5000/api/protected/getWeightGoal", {
                     method: "GET",
                     headers: {
                         Authorization: `Bearer ${token}`

@@ -5,8 +5,14 @@ const inputEmail = document.getElementById("email");
 const inputPassword = document.getElementById("password");
 
 const button = document.getElementById("login-button");
+const buttonGoogle = document.querySelector(".gsi-material-button")
 
 let flag = false;
+
+buttonGoogle.addEventListener("click", async (e) =>{
+    e.preventDefault()
+    window.location.href = "http://localhost:5000/auth/google";
+})
 
 button.addEventListener("click", function validate(event) {  
     event.preventDefault();
