@@ -1,0 +1,272 @@
+body {
+  visibility: hidden;
+}
+
+.progreso-body {
+  margin: 0;
+  background-color: #eff299;
+  font-family: "Bubblegum Sans", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: hidden;
+}
+
+.back-icon {
+  width: 70px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.back-icon:hover {
+  scale: 0.8;
+}
+
+.progreso-container {
+  width: 100%;
+  max-width: 1200px;
+  background-color: #a0d94a;
+  border: 5px solid black;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  box-sizing: border-box;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: animacion3DAmazing 3.5s normal;
+  margin: 20px 0;
+}
+.progreso-title {
+  margin: 0 0 20px 0;
+  font-size: 2rem;
+  text-align: center;
+}
+.main-content {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.chart-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #eff299;
+  border: 3px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  min-height: 400px;
+  height: 100%;
+}
+
+.chart-wrapper {
+  position: relative;
+  flex: 1;
+  width: 100%;
+  min-height: 300px;
+}
+
+#weightChart {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.chart-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+.objetivo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.objetivo-label {
+  font-weight: bold;
+}
+.objetivo-btn {
+  padding: 8px 15px;
+  background-color: #ff6b6b;
+  border: 2px solid black;
+  border-radius: 15px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.objetivo-btn {
+  transform: scale(1.05);
+}
+.chart-wrapper {
+  flex: 1;
+  width: 100%;
+  min-height: 100px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.agregar-btn {
+  padding: 12px 25px;
+  background-color: #ff6b6b;
+  border: 3px solid black;
+  border-radius: 25px;
+  font-family: inherit;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  align-self: center;
+  margin-top: auto;
+}
+
+.agregar-btn {
+  transform: scale(1.05);
+}
+
+.delete-btn {
+  padding: 3px 25px;
+  background-color: #ff6b6b;
+  border: 3px solid black;
+  border-radius: 25px;
+  font-family: inherit;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+  align-self: center;
+  margin-top: auto;
+}
+
+.delete-btn {
+  transform: scale(1.05);
+}
+
+.registros-container {
+  flex: 0 0 280px;
+  background-color: #eff299;
+  border: 3px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  max-height: 500px;
+}
+.registros-container h2 {
+  margin: 0 0 15px 0;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.registros-list {
+  overflow-y: auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.registro-item {
+  background-color: #a0d94a;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  animation: popIn 0.4s ease-out;
+}
+.registro-fecha {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+.registro-peso {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  animation: fadeIn 0.3s;
+  justify-content: center;
+  align-items: center;
+}
+.modal.active {
+  display: flex;
+}
+.modal-content {
+  background-color: #a0d94a;
+  padding: 25px;
+  border: 5px solid black;
+  border-radius: 30px;
+  width: 90%;
+  max-width: 400px;
+  font-family: "Bubblegum Sans", sans-serif;
+  position: relative;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 15px;
+  background-color: #eff299;
+  font-family: inherit;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+.modal-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+.guardar-btn,
+.cancelar-btn {
+  padding: 10px 20px;
+  border: 3px solid black;
+  border-radius: 15px;
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.guardar-btn {
+  background-color: #ff6b6b;
+}
+.guardar-btn {
+  transform: scale(1.05);
+}
+.cancelar-btn {
+  background-color: #eff299;
+}
+.cancelar-btn {
+  background-color: #e6e980;
+}
+.error-messages {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  height: 16px;
+}

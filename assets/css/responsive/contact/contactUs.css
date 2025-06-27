@@ -1,0 +1,97 @@
+@media (min-width: 768px) {
+    .contact-container {
+        padding: 35px;
+    }
+    
+    .send-btn {
+        padding: 14px 40px;
+    }
+    
+    .back-icon {
+        width: 65px;
+        left: 30px;
+        top: 30px;
+    }
+}
+
+@media (min-width: 1559px) {
+    .contact-body {
+        padding: 40px;
+    }
+    
+    .contact-container {
+        max-width: 600px;
+        padding: 40px;
+    }
+    
+    .contact-title {
+        font-size: 2.2rem;
+        margin-bottom: 30px;
+    }
+    
+    label {
+        font-size: 1.1rem;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+        padding: 14px;
+        font-size: 1.1rem;
+    }
+    
+    .send-btn {
+        padding: 15px 45px;
+        font-size: 1.3rem;
+        max-width: 300px;
+    }
+    
+    .back-icon {
+        width: 80px;
+        left: 50px;
+        top: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-body {
+        padding: 15px;
+    }
+    
+    .back-icon {
+        width: 50px;
+        left: 15px;
+        top: 15px;
+    }
+    
+    .contact-container {
+        padding: 20px;
+        border-radius: 25px;
+    }
+    
+    .contact-title {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+    
+    .send-btn {
+        padding: 12px 25px;
+        font-size: 1.1rem;
+        margin-top: 25px;
+    }
+    
+    label {
+        font-size: 0.9rem;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+}

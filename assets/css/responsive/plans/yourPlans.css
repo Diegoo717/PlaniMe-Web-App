@@ -1,0 +1,292 @@
+@media (min-width: 390px) and (max-width: 430px) and (max-height: 932px) {
+    .container {
+        padding: 15px;
+    }
+
+    header {
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .back-icon {
+        position: absolute;
+        left: 15px;
+        top: 15px; 
+        width: 45px; 
+        height: auto;
+        cursor: pointer;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+
+    .search-filter {
+        max-width: 100%;
+    }
+
+    .plans-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .plan-card {
+        width: 100%;
+        max-width: 380px;
+        margin: 0 auto;
+    }
+
+    .plan-preview {
+        height: 140px;
+    }
+
+    .plan-info h3 {
+        font-size: 1.1rem;
+    }
+
+    .action-btn {
+        padding: 7px 10px;
+        font-size: 0.85rem;
+    }
+
+    @keyframes reveal {
+        0% {
+            transform: translateX(400px);
+        }
+        20% {
+            transform: translateX(280px) rotate(-6deg);
+        }
+        40% {
+            transform: translateX(280px) rotate(-6deg);
+        }
+        60% {
+            transform: translateX(400px) rotate(0deg);
+        }
+        90% {
+            transform: translateX(400px) rotate(0deg);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    .detail-content {
+        flex-direction: column;
+    }
+
+    .pdf-view {
+        max-height: 28%;
+    }
+}
+
+@media (min-width: 430px) and (max-width: 767px) {
+    .container {
+        padding: 18px;
+    }
+
+    header {
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .back-icon {
+        position: absolute;
+        left: 15px;
+        top: 15px; 
+        width: 50px; 
+        height: auto;
+        cursor: pointer;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .plans-container {
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 18px;
+    }
+
+    .plan-preview {
+        height: 150px;
+    }
+
+    .plan-info h3 {
+        font-size: 1.15rem;
+    }
+
+    .action-btn {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+
+    @keyframes reveal {
+        0% {
+            transform: translateX(450px);
+        }
+        20% {
+            transform: translateX(320px) rotate(-6deg);
+        }
+        40% {
+            transform: translateX(320px) rotate(-6deg);
+        }
+        60% {
+            transform: translateX(450px) rotate(0deg);
+        }
+        90% {
+            transform: translateX(450px) rotate(0deg);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    .detail-content {
+        flex-direction: column;
+    }
+
+    .pdf-view {
+        max-height: 35%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 900px;
+    }
+
+    header {
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .back-icon {
+        position: absolute;
+        left: 20px;
+        top: 20px; 
+        width: 70px; 
+        height: auto;
+        cursor: pointer;
+    }
+    
+    .search-filter {
+        margin-top: 30px;
+    }
+
+    .plans-container {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 25px;
+    }
+    
+    .plan-preview {
+        height: 180px;
+    }
+    
+    .plan-info h3 {
+        font-size: 1.3rem;
+    }
+    
+    .action-btn {
+        padding: 9px 14px;
+        font-size: 0.95rem;
+    }
+
+    @keyframes reveal {
+        0% {
+            transform: translateX(800px); 
+        }
+        20% {
+            transform: translateX(600px) rotate(-6deg); 
+        }
+        40% {
+            transform: translateX(600px) rotate(-6deg); 
+        }
+        60% {
+            transform: translateX(800px) rotate(0deg);  
+        }
+        90% {
+            transform: translateX(800px) rotate(0deg);     
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    .detail-content {
+        flex-direction: column;
+    }
+
+    .pdf-view {
+        max-height: 40%;
+    }
+}
+
+@media (min-width: 1559px) {
+    .container {
+        max-width: 1400px;
+    }
+
+    header {
+        margin-left: 50px;
+    }
+
+    .back-icon {
+        position: absolute;
+        left: 25px;
+        top: 25px; 
+        width: 80px; 
+        height: auto;
+        cursor: pointer;
+    }
+    
+    .plans-container {
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 30px;
+    }
+    
+    .plan-preview {
+        height: 200px;
+    }
+    
+    .plan-info h3 {
+        font-size: 1.4rem;
+    }
+    
+    .action-btn {
+        padding: 10px 15px;
+        font-size: 1rem;
+    }
+
+    @keyframes reveal {
+        0% {
+            transform: translateX(1500px); 
+        }
+        20% {
+            transform: translateX(1200px) rotate(-6deg); 
+        }
+        40% {
+            transform: translateX(1200px) rotate(-6deg); 
+        }
+        60% {
+            transform: translateX(1500px) rotate(0deg);  
+        }
+        90% {
+            transform: translateX(1500px) rotate(0deg);     
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+}

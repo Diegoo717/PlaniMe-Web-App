@@ -1,0 +1,9 @@
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes reveal3 {
+  from { transform: translateX(1200px); }
+  to { transform: translateY(0); }
+}

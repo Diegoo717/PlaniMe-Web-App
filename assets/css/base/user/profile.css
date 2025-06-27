@@ -1,0 +1,154 @@
+.profile-body {
+    margin: 0;
+    background-color: #EFF299;
+    font-family: "Bubblegum Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    min-height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    visibility: hidden;
+}
+
+.back-icon {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    width: 70px;
+    height: auto;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.back-icon:hover{
+  scale: 0.8;
+}
+
+.profile-container {
+    height: 500px;
+    width: 500px;
+    background-color: #A0D94A;
+    border: 5px solid black;
+    border-radius: 10%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    transition: transform 0.3s ease-in, box-shadow 0.3s ease-in;
+    position: relative;
+    animation: smoothEntry 1.4s cubic-bezier(0.28, 0.84, 0.42, 1) both;
+    transform-origin: center top;
+}
+
+.profile-body .profile-container {
+    animation-delay: 0.2s;
+}
+
+.row1 {
+    grid-row: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    padding-top: 20px;
+}
+
+.profile-container img:first-child {
+    margin-top: 20px;
+    height: auto;
+    width: 30%;
+}
+
+.profile-container img:last-child {
+    position: absolute;
+    right: 35px;
+    top: 35px;
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+}
+
+.row2 {
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    font-size: 18px;
+}
+
+.dynamic-content {
+    margin-left: 10px;
+}
+
+.dynamic-content2 {
+    margin-left: 10px;
+}
+
+.row3 {
+    grid-row: 3;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.reset-password-btn {
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: "Bubblegum Sans", sans-serif;
+    width: 80%;
+    max-width: 200px;
+}
+
+.reset-password-btn:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+    color: #0069d9;
+    border-color: #0069d9;
+}
+
+.reset-password-btn:active {
+    transform: scale(0.98);
+}
+
+.logout-btn {
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: "Bubblegum Sans", sans-serif;
+    width: 80%;
+    max-width: 200px;
+}
+
+.logout-btn:hover {
+    background-color: rgba(255, 0, 0, 0.1);
+    color: #d32f2f;
+    border-color: #d32f2f;
+}
+
+.logout-btn:active {
+    transform: scale(0.98);
+}

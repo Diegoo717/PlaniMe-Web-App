@@ -1,0 +1,42 @@
+@keyframes animacion3DAmazing {
+  0% {
+    transform: rotateX(45deg);
+  }
+  25% {
+    transform: rotateX(90deg);
+  }
+  50% {
+    transform: rotateX(160deg);
+  }
+  60% {
+    transform: rotateX(160deg);
+  }
+  75% {
+    transform: rotateX(280deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes popIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

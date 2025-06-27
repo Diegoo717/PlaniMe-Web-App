@@ -1,0 +1,130 @@
+.dashboard-body {
+    margin: 0;
+    padding: 20px;
+    background-color: #EFF299;
+    font-family: "Bubblegum Sans", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    visibility: hidden;
+}
+
+.dashboard-header {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    animation: fadeIn 2s ease-out forwards;
+    margin-bottom: 20px;
+}
+
+.dashboard-header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: black;
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+}
+
+.dashboard-main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.dashboard-card {
+    height: 400px;
+    width: 100%;
+    max-width: 320px;
+    background-color: #A0D94A;
+    border: 5px solid black;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    opacity: 0;
+    cursor: pointer;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    border: 5px solid #FF6B6B;
+    box-shadow: 0 10px 20px rgba(255, 107, 107, 0.3);
+}
+
+.dashboard-card img {
+    width: 60%;
+    max-width: 150px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.dashboard-card:hover img {
+    transform: scale(1.1) rotate(-5deg);
+}
+
+.dashboard-card h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #333;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.dashboard-card:hover h1 {
+    transform: translateY(-5px);
+}
+
+.vertical-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 320px;
+}
+
+.dashboard-card.half-height {
+    height: 190px; 
+    justify-content: space-around;
+}
+
+.dashboard-card.half-height img {
+    width: 40%;
+    max-width: 100px;
+    margin-bottom: 15px;
+}
+
+.dashboard-card.half-height h1 {
+    font-size: 1.5rem;
+}
+
+#progress {
+    animation: slideFromBottom 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    animation-delay: 1.2s;
+}
+
+#create-plan {
+    animation: slideFromLeft 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    animation-delay: 0.3s;
+}
+
+#your-plans {
+    animation: slideFromRight 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    animation-delay: 0.6s;
+}
+
+#profile {
+    animation: slideFromBottom 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    animation-delay: 0.9s;
+}

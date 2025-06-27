@@ -1,0 +1,110 @@
+@media (min-width: 768px) {
+    .dashboard-card.half-height {
+        height: 215px;
+    }
+}
+
+@media (min-width: 1559px) {
+    .vertical-stack {
+        max-width: 350px;
+    }
+    
+    .dashboard-card.half-height {
+        height: 230px;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    .vertical-stack {
+        align-items: center;
+        max-width: 280px; 
+        margin: 0 auto;
+    }
+    
+    .dashboard-card.half-height {
+        height: 160px;
+        width: 100%; 
+    }
+
+    .dashboard-main {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        justify-items: center;
+    }
+
+    .dashboard-card, .dashboard-card.half-height {
+        max-width: 280px;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .dashboard-header h1 {
+        font-size: 3rem;
+    }
+    
+    .dashboard-main {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    
+    .dashboard-card {
+        height: 450px;
+    }
+}
+
+@media (min-width: 1559px) {
+    .dashboard-body {
+        padding: 20px 50px;
+    }
+    
+    .dashboard-header h1 {
+        margin-top: 40px;
+        font-size: 4rem;
+    }
+    
+    .dashboard-main {
+        margin-top: 50px;
+        gap: 50px;
+        padding: 40px;
+    }
+    
+    .dashboard-card {
+        height: 480px;
+        max-width: 350px;
+    }
+    
+    .dashboard-card:hover {
+        transform: translateY(-20px) scale(1.05);
+    }
+}
+
+@media (max-width: 480px) {
+    .dashboard-body {
+        padding: 15px;
+    }
+    
+    .dashboard-header h1 {
+        font-size: 2rem;
+    }
+    
+    .dashboard-main {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .dashboard-card {
+        height: 350px;
+        max-width: 280px;
+    }
+    
+    .dashboard-card img {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    
+    .dashboard-card h1 {
+        font-size: 1.5rem;
+    }
+}

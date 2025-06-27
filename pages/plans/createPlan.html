@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/css/animations/plans/createPlan.css">
+    <link rel="stylesheet" href="../../assets/css/base/plans/createPlan.css">
+    <link rel="stylesheet" href="../../assets/css/responsive/plans/createPlan.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+    <title>Crear Plan</title>
+</head>
+<body class="create-plan-body">
+
+    <img class="back-icon" src="../../assets/Images/iconoRegresar.png" alt="" onclick="location.href='../home/dashboard.html'">
+    
+    <form class="create-plan-container">
+        <h1 class="create-plan-title">¡Ingresa tus datos!</h1>
+    
+        <div class="fields-container">
+            <div>
+                <label>Edad:</label>
+                <input id="age-input" type="number" min="12" max="99" placeholder="Ej: 25">
+                <div id="age-error" class="error-messages"></div>
+            </div>
+            
+            <div class="gender-container">
+                <label>Sexo:</label>
+                <div class="gender-options">
+                    <div>
+                        <input type="radio" id="hombre" name="sexo" value="hombre">
+                        <label for="hombre">M</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="mujer" name="sexo" value="mujer">
+                        <label for="mujer">F</label>
+                    </div>
+                </div>
+                <div id="gender-error" class="error-messages"></div>
+            </div>
+            
+            <div>
+                <label>Peso (kg):</label>
+                <input id="weight-input" type="number" min="30" max="200" placeholder="Ej: 68">
+                <div id="weight-error" class="error-messages"></div>
+            </div>
+            
+            <div>
+                <label>Altura (cm):</label>
+                <input id="height-input" type="number" min="120" max="250" placeholder="Ej: 175">
+                <div id="height-error" class="error-messages"></div>
+            </div>
+            
+            <div>
+                <label>Nivel de actividad física:</label>
+                <select id="activity-select" class="create-plan-select">
+                    <option value="" disabled selected>Selecciona...</option>
+                    <option value="sedentario">Sedentario</option>
+                    <option value="ligero">Ligero (1-2 días/semana)</option>
+                    <option value="moderado">Moderado (3-4 días/semana)</option>
+                    <option value="activo">Activo (5-6 días/semana)</option>
+                </select>
+                <div id="activity-error" class="error-messages"></div>
+            </div>
+            
+            <div>
+                <label>Objetivo físico:</label>
+                <select id="goal-select" class="create-plan-select">
+                    <option value="" disabled selected>Selecciona...</option>
+                    <option value="bajar">Bajar de peso</option>
+                    <option value="mantener">Mantener peso</option>
+                    <option value="subir">Aumentar masa muscular</option>
+                </select>
+                <div id="goal-error" class="error-messages"></div>
+            </div>
+        </div>
+    
+        <button type="button" class="calculate-btn">Calcular</button>
+    </form>
+
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <h2>¡Plan creado con éxito!</h2>
+            <p>Tu plan alimenticio ha sido generado correctamente.</p>
+            <button id="modalAcceptBtn">Aceptar</button>
+        </div>
+    </div>
+
+    <script src="../../assets/js/createPlan.js"></script>
+
+</body>
+</html>

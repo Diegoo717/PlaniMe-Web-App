@@ -1,0 +1,8 @@
+@keyframes reveal3 {
+  from {
+      transform: translateX(1200px);
+  }
+  to {
+      transform: translateY(0);
+  }
+}

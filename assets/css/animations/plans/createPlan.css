@@ -1,0 +1,27 @@
+@keyframes animacion3DEspectacular {
+    0% {
+        transform: perspective(1000px) rotateX(80deg) rotateZ(20deg) translateZ(-200px);
+        opacity: 0;
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+    30% {
+        transform: perspective(1000px) rotateX(20deg) rotateZ(-10deg) translateZ(50px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    }
+    60% {
+        transform: perspective(1000px) rotateX(-5deg) rotateZ(5deg) translateZ(0);
+    }
+    80% {
+        transform: perspective(1000px) rotateX(2deg) rotateZ(-2deg);
+    }
+    100% {
+        transform: perspective(1000px) rotateX(0) rotateZ(0);
+        opacity: 1;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

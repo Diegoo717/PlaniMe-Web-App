@@ -1,0 +1,37 @@
+@keyframes walkInAnimation {
+    0% {
+        transform: 
+            translateX(-100%) 
+            rotateZ(-5deg) 
+            rotateY(15deg);
+    }
+    20% {
+        transform: 
+            translateX(-70%) 
+            rotateZ(3deg) 
+            rotateY(-10deg);
+    }
+    40% {
+        transform: 
+            translateX(-40%) 
+            rotateZ(-2deg) 
+            rotateY(8deg);
+    }
+    60% {
+        transform: 
+            translateX(-15%) 
+            rotateZ(1deg) 
+            rotateY(-5deg);
+    }
+    80% {
+        transform: 
+            translateX(5%) 
+            rotateZ(-0.5deg);
+    }
+    100% {
+        transform: 
+            translateX(0) 
+            rotateZ(0) 
+            rotateY(0);
+    }
+}
