@@ -1,0 +1,615 @@
+@media (min-width: 1181px) and (max-width: 1400px) {
+  article {
+    margin-bottom: 120px; 
+  }
+  
+  #article1, #article2, #article3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 65vh;
+    padding: 60px 0;
+  }
+  
+  article section,
+  article aside {
+    width: min(600px, 42%);
+  }
+  
+  article section {
+    font-size: 22px;
+  }
+  
+  article aside img {
+    width: min(550px, 100%);
+  }
+  
+  article section p {
+    font-size: 22px;
+    padding: 30px;
+  }
+
+  .info article{
+    margin: 20px;
+  }
+}
+
+@media (min-width: 1401px) and (max-width: 1558px) {
+  #article1, #article2, #article3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  article section,
+  article aside {
+    width: min(650px, 44%);
+  }
+  
+  .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  article aside img {
+    width: min(600px, 88%);
+  }
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+header nav {
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 28px;
+}
+
+.buttons {
+  width: 50%;
+  justify-content: space-between;
+}
+
+main {
+  padding: 25px;
+  height: auto;
+}
+
+main h1 {
+  font-size: 36px;
+}
+
+main img {
+  width: 280px;
+  margin: 25px 0;
+}
+
+.info {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: 380px;
+}
+
+.info article {
+  margin: 20px;
+  min-width: 30%;
+}
+
+article {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+article section,
+article aside {
+  width: 45%;
+}
+
+article section p {
+  font-size: 20px;
+}
+
+article aside img {
+  width: 90%;
+}
+
+#article2 {
+  flex-direction: row-reverse;
+}
+
+footer {
+  flex-direction: row; 
+  height: auto;
+  padding: 15px 20px;
+  font-size: 18px;
+}
+
+footer a {
+  margin: 0 10px;
+}
+
+button {
+  width: 190px;
+  height: 65px;
+  font-size: 20px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1180px) {
+header nav {
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.title{
+  font-size: 36px;
+}
+
+.buttons {
+  width: 50%;
+  justify-content: space-around;
+}
+
+main {
+  height: auto;
+  padding: 30px;
+  flex-direction: column;
+  text-align: center;
+}
+
+main h1{
+  font-size: 44px;
+}
+
+.main-button{
+  margin: 20px;
+}
+
+main img {
+  width: 350px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.info {
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.info article {
+  width: 45%;
+  margin: 4%;
+}
+
+article {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 60px; 
+}
+
+article section,
+article aside {
+  width: 60%;
+}
+
+article section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+article aside img {
+  width: 90%;
+}
+
+#article2 {
+  flex-direction: row-reverse;
+}
+
+#article1, #article2, #article3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+header nav {
+  padding: 10px;
+}
+
+.buttons {
+  width: 100%;
+  justify-content: space-around;
+}
+
+main {
+  padding: 20px;
+  height: auto;
+  flex-direction: column;
+  text-align: center;
+}
+
+main img {
+  width: 300px;
+  margin-top: 20px;
+}
+
+.info {
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.info article {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+article {
+  flex-direction: column;
+  margin-bottom: 50px; 
+}
+
+article section {
+  width: 90%;
+}
+
+article aside img {
+  width: 90%;
+}
+
+#article2 {
+  flex-direction: column-reverse;
+}
+
+footer {
+  flex-direction: column;
+  height: auto;
+  padding: 15px;
+  text-align: center;
+}
+
+footer a {
+  margin-bottom: 10px;
+}
+}
+
+@media (max-width: 480px) {
+header nav {
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.buttons {
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttons a {
+  margin: 5px 0;
+}
+
+main {
+  padding: 15px;
+  height: auto;
+  flex-direction: column;
+  text-align: center;
+  margin: 10px;
+}
+
+main img {
+  width: 250px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.info {
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.info article {
+  width: 70%;
+  margin-bottom: 15%;
+}
+
+article {
+  flex-direction: column;
+  margin-bottom: 40px; 
+}
+
+article section {
+  width: 95%;
+}
+
+article section p {
+  font-size: 18px;
+  padding: 15px;
+}
+
+article aside {
+  padding: 15px;
+}
+
+article aside img {
+  width: 95%;
+}
+
+#article2 {
+  flex-direction: column-reverse;
+}
+
+footer {
+  height: auto;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button {
+  width: 180px;
+  height: 60px;
+  font-size: 18px;
+}
+}
+
+@media (min-width: 1559px) {
+
+.title{
+  font-size: 40px;
+}
+
+.buttons a{
+  font-size: 24px;
+}
+
+body {
+  max-width: 1800px; 
+  margin: 0 auto;
+}
+
+main {
+  height: 500px;
+}
+
+main h1{
+  font-size: 48px;
+}
+
+.info article {
+  width: 280px;
+  font-size: 18px;
+}
+
+#article1, #article2, #article3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+article section,
+article aside {
+  width: min(900px, 45%);
+  max-width: 1000px;
+}
+
+article section p {
+  font-size: 28px;
+}
+
+article aside img {
+  width: min(800px, 90%);
+  max-width: 900px;
+}
+
+footer{
+  font-size: 24px;
+}
+
+footer a{
+  font-size: 24px;
+}
+}
+
+@media (max-width: 768px) {
+article aside img {
+  animation-range: entry 10% cover 20%; 
+}
+
+@media (max-width: 480px) {
+  article aside img {
+    animation-range: entry 5% cover 15%; 
+  }
+}
+}
+
+@media (min-width: 2200px) {
+  .title{
+    font-size: 55px;
+  }
+
+  .buttons a{
+    font-size: 32px;
+  }
+
+  body {
+    max-width: 2500px; 
+    margin: 0 auto;
+  }
+
+  main {
+    height: 650px;
+  }
+
+  main h1{
+    font-size: 65px;
+  }
+
+  .info article {
+    width: 380px;
+    font-size: 24px;
+  }
+
+  #article1, #article2, #article3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  article section, article aside {
+    width: min(1200px, 45%);
+    max-width: 1400px;
+  }
+
+  article section p {
+    font-size: 38px;
+  }
+
+  article aside img {
+    width: min(1100px, 90%);
+    max-width: 1300px;
+  }
+
+  footer{
+    font-size: 32px;
+  }
+
+  footer a{
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1800px) and (max-width: 2199px) {
+  .title{
+    font-size: 46px;
+  }
+
+  .buttons a{
+    font-size: 28px;
+  }
+
+  body {
+    max-width: 2100px; 
+    margin: 0 auto;
+  }
+
+  main {
+    height: 580px;
+  }
+
+  main h1{
+    font-size: 56px;
+  }
+
+  .info article {
+    width: 320px;
+    font-size: 20px;
+  }
+
+  #article1, #article2, #article3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  article section, article aside {
+    width: min(1050px, 45%);
+    max-width: 1200px;
+  }
+
+  article section p {
+    font-size: 32px;
+  }
+
+  article aside img {
+    width: min(950px, 90%);
+    max-width: 1100px;
+  }
+
+  footer{
+    font-size: 28px;
+  }
+
+  footer a{
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 3000px) {
+  .title{
+    font-size: 70px;
+  }
+
+  .buttons a{
+    font-size: 42px;
+  }
+
+  body {
+    max-width: 3200px; 
+    margin: 0 auto;
+  }
+
+  main {
+    height: 800px;
+  }
+
+  main h1{
+    font-size: 85px;
+  }
+
+  .info article {
+    width: 480px;
+    font-size: 30px;
+  }
+
+  #article1, #article2, #article3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  article section, article aside {
+    width: min(1500px, 45%);
+    max-width: 1800px;
+  }
+
+  article section p {
+    font-size: 48px;
+  }
+
+  article aside img {
+    width: min(1400px, 90%);
+    max-width: 1700px;
+  }
+
+  footer{
+    font-size: 42px;
+  }
+
+  footer a{
+    font-size: 42px;
+  }
+}
