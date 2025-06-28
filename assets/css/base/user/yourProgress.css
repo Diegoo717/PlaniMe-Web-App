@@ -4,7 +4,8 @@ body {
 
 .progreso-body {
   margin: 0;
-  background-color: #eff299;
+  background-image: url("../../../Images/PlaniMe-WebApp-Background.png");
+  background-attachment: fixed;
   font-family: "Bubblegum Sans", sans-serif;
   min-height: 100vh;
   display: flex;

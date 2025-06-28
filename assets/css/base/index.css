@@ -1,6 +1,10 @@
 body{
   margin: 0;
-  background-color: #EFF299;
+  background-image: url("../../Images/PlaniMe-WebApp-Background2.png");
+  background-attachment: fixed;
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center center; 
   font-family: "Bubblegum Sans", sans-serif; 
 }
 
@@ -147,10 +151,20 @@ align-items: center;
 flex-direction: column;
 }
 
+.nav-div{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
 main img{
-width: 430px;
-border: 5px solid black;
-box-shadow: 5px 5px 20px #EFF299;
+width: 70%;
+height: auto;
+}
+
+.logo{
+  width: 15%;
+  height: auto;
 }
 
 article{

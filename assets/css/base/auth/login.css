@@ -1,6 +1,10 @@
 body {
   margin: 0;
-  background-color: #EFF299;
+  background-image: url("../../../Images/PlaniMe-WebApp-Background2.png");
+  background-attachment: fixed;
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center center; 
   font-family: "Bubblegum Sans", sans-serif;
   display: flex;
   justify-content: center;
@@ -139,6 +143,11 @@ form div a {
   text-decoration: none;
   font-size: 15px;
   text-align: center;
+  transition: transform 0.3s ease;
+}
+
+form div a:hover {
+  transform: scale(1.1);
 }
 
 .error-messages {
@@ -151,8 +160,6 @@ form div a {
   font-family: "Bubblegum Sans", sans-serif;
   -webkit-text-stroke: 0.6px #1a1a1a;
 }
-
-/* Google icon */
 
 .gsi-material-button {
   background-color: WHITE;
