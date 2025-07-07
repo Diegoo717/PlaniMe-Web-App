@@ -78,9 +78,21 @@
       </div>
       <div>
         <p>¿Haz olvidado tu contraseña?</p>
-        <a href="">HAZ CLICK AQUI</a>
+        <a id="passwordRecobery">HAZ CLICK AQUI</a>
       </div>
     </form>
+
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <h2>¿Olvidaste tu contraseña?</h2>
+            <h3>No te preocupes, puedes recuperarla.</h3>
+            <p>Ingresa tu email</p>
+            <input id="inputEmailModal" type="email" placeholder="tucorreo@algo.com">
+            <div id="emailModal-error" class="error-messages"></div>
+            <button type="button" id="modalAcceptBtn">Aceptar</button>
+            <img src="../../assets/Images/exitModalcon.png" alt="exitModalIcon" id="exitModalIcon">
+        </div>
+    </div>
 
     <script src="../../assets/js/login.js"></script>
   </body>

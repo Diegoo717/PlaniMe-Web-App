@@ -12,12 +12,14 @@
   form {
       width: 100%;
       max-width: 320px;
-      min-height: 380px;
+      min-height: 450px;
+      padding-top: 0;
   }
   
   form #welcome-label {
       font-size: 26px;
       margin-bottom: 20px;
+      margin-top: 0px;
   }
   
   form .input-labels {
@@ -38,6 +40,11 @@
   
   form div a {
       font-size: 13px;
+  }
+
+  #modalAcceptBtn{
+    min-height: 45px; 
+    white-space: nowrap;
   }
 }
 
