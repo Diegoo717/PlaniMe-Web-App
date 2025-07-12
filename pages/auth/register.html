@@ -1,26 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Registro - PlaniMe | Crear Cuenta Gratis para Planes de Alimentación Personalizados</title>
+    <meta name="description" content="Regístrate gratis en PlaniMe y accede a planes de alimentación 100% personalizados. Crea tu cuenta y comienza tu transformación nutricional hoy mismo." />
+    <meta name="keywords" content="registro PlaniMe, crear cuenta gratis, registro nutrición, planes alimentación personalizados, cuenta PlaniMe gratis, registrarse PlaniMe, signup nutrición" />
+    <meta name="author" content="PlaniMe - Ing. Diego Magaña Álvarez" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="es" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Registro - PlaniMe | Crear Cuenta Gratis" />
+    <meta property="og:description" content="Regístrate gratis en PlaniMe y accede a planes de alimentación 100% personalizados. Comienza tu transformación nutricional hoy." />
+    <meta property="og:image" content="../../assets/Images/LogoPM.png" />
+    <meta property="og:url" content="https://planime.com/pages/auth/register.html" />
+    <meta property="og:site_name" content="PlaniMe" />
+    <meta property="og:locale" content="es_ES" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Registro - PlaniMe | Crear Cuenta Gratis" />
+    <meta name="twitter:description" content="Regístrate gratis y accede a planes de alimentación 100% personalizados en PlaniMe." />
+    <meta name="twitter:image" content="../../assets/Images/LogoPM.png" />
+
+    <meta name="application-name" content="PlaniMe" />
+    <meta name="theme-color" content="#467326" />
+    <meta name="msapplication-TileColor" content="#467326" />
+    <link rel="canonical" href="https://planime.com/pages/auth/register.html" />
+
+    <link rel="icon" href="../../assets/Images/LogoPM.png" type="image/png" />
+    <link rel="apple-touch-icon" href="../../assets/Images/LogoPM.png" />
+
     <link rel="stylesheet" href="../../assets/css/animations/auth/register.css" />
     <link rel="stylesheet" href="../../assets/css/base/auth/register.css" />
     <link rel="stylesheet" href="../../assets/css/responsive/auth/register.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
-    <title>Registro</title>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Registro - PlaniMe",
+      "description": "Página de registro de PlaniMe para crear cuenta gratuita y acceder a planes de alimentación personalizados",
+      "url": "https://planime.com/pages/auth/register.html",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "PlaniMe",
+        "url": "https://planime.com"
+      },
+      "about": {
+        "@type": "Organization",
+        "name": "PlaniMe",
+        "description": "Software de nutrición con planes 100% personalizados y totalmente gratis",
+        "url": "https://planime.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://planime.com/assets/Images/LogoPM.png"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "description": "Registro gratuito para acceder a planes de alimentación personalizados"
+        },
+        "founder": {
+          "@type": "Person",
+          "name": "Diego Magaña Álvarez",
+          "jobTitle": "Arquitecto y desarrollador Full-Stack"
+        }
+      }
+    }
+    </script>
 </head>
 
 <body>
-
     <img src="../../assets/Images/iconoRegresar.png" alt="" onclick="location.href='../../public/index.html'">
-
+    
     <div class="form-container">
         <form id="register-form">
-
+            
             <label id="register-title">Registro</label>
-
+            
             <label class="form-labels" for="username">Nombre</label>
             <input id="username" type="text">
             <p id="username-error" class="error-messages">Ingresa un nombre valido</p>
@@ -33,7 +96,7 @@
             <label class="form-labels" for="password">Contraseña</label>
             <input id="password" type="password">
             <p id="password-error" class="error-messages">La contraseña no debe llevar caracteres</p>
-
+            
             <button id="register-button">
                 <span>Aceptar</span>
             </button>
@@ -41,10 +104,10 @@
                 <p>¿Ya tienes una cuenta?</p>
                 <a href="login.html">HAZ CLICK AQUI</a>
             </div>
-
+        
         </form>
     </div>
-
+    
     <script src="../../assets/js/register.js"></script>
 
 </body>
