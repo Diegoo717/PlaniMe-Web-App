@@ -25,6 +25,7 @@
   cursor: pointer;
   z-index: 10;
   transition-duration: 0.3s;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.432));
 }
 
 .back-icon:hover {
@@ -34,7 +35,6 @@
 .about-container {
   width: 100%;
   max-width: 1000px;
-  max-height: 180vh;
   background-color: #a0d94a;
   border: 5px solid black;
   border-radius: 30px;
@@ -93,14 +93,6 @@
   text-align: center;
 }
 
-.architecture {
-  color: black;
-}
-
-.tech-notes {
-  color: black;
-}
-
 .values-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -136,4 +128,46 @@
 .tech-box h2,
 .tech-box p {
   color: black;
+}
+
+.tech-details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tech-specs {
+  width: 100%;
+  max-width: 700px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.tech-specs p {
+  text-align: left;
+  margin: 10px 0;
+  line-height: 1.6;
+  color: #000;
+  font-size: 1rem;
+}
+
+.tech-description {
+  text-align: center !important;
+  margin-bottom: 10px !important;
+  font-size: 2.1rem;
+}
+
+.tech-box h2:not(:first-child) {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+a {
+  color: #000;
+  text-decoration: underline;
 }
