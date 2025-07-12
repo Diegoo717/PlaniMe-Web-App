@@ -22,6 +22,7 @@ img {
   left: 30px;
   cursor: pointer;
   transition-duration: 0.3s;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.432));
 }
 
 img:hover{
@@ -43,6 +44,7 @@ form {
   padding: 20px;
   box-sizing: border-box;
   margin: 20px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3)
 }
 
 form #welcome-label {
@@ -51,6 +53,7 @@ form #welcome-label {
   font-size: 30px;
   color: white;
   text-align: center;
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 1);
 }
 
 form .input-labels {
@@ -69,6 +72,7 @@ form input {
   max-width: 300px;
   padding: 0 10px;
   font-family: "Bubblegum Sans", sans-serif;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.432));
 }
 
 #login-button {
@@ -86,10 +90,9 @@ form input {
   transition: all 0.25s cubic-bezier(0.37, 0, 0.63, 1);
   position: relative;
   overflow: hidden;
-  box-shadow: 2px 2px 0 rgba(0,0,0,0.1);
-  margin-bottom: 20px;
   width: auto;
   min-width: 120px;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.432));
 }
 
 #login-button::before {
@@ -176,6 +179,7 @@ form div a {
   text-align: center;
   cursor: pointer;
   transition: transform 0.3s ease;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
 
 form div a:hover {
@@ -219,6 +223,7 @@ form div a:hover {
   width: auto;
   max-width: 400px;
   min-width: min-content;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.432));
 }
 
 .gsi-material-button .gsi-material-button-icon {
