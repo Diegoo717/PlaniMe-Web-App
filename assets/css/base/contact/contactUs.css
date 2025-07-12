@@ -29,6 +29,7 @@ body {
   cursor: pointer;
   z-index: 10;
   transition-duration: 0.3s;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.432));
 }
 
 .back-icon:hover {
@@ -50,7 +51,7 @@ body {
   transform-style: preserve-3d;
   animation: spinInAnimation 2s cubic-bezier(0.25, 0.1, 0.25, 1.5) both;
   margin: 20px 0;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3)
 }
 
 .contact-title {
