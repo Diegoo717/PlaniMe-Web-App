@@ -1,44 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Panel de Control - PlaniMe | Dashboard de Planes de Alimentación Personalizados</title>
+    <meta name="description" content="Accede a tu panel de control en PlaniMe. Crea planes de alimentación personalizados, revisa tu progreso y gestiona tu perfil nutricional desde tu dashboard personal.">
+    <meta name="keywords" content="dashboard PlaniMe, panel control PlaniMe, crear plan alimentación, planes personalizados, progreso nutricional, perfil PlaniMe, panel usuario PlaniMe">
+    <meta name="author" content="PlaniMe - Ing. Diego Magaña Álvarez">
+    <meta name="robots" content="noindex, follow">
+    <meta name="language" content="es">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Panel de Control - PlaniMe | Dashboard Personal">
+    <meta property="og:description" content="Gestiona tus planes de alimentación personalizados desde tu panel de control. Crea, revisa y monitorea tu progreso nutricional.">
+    <meta property="og:image" content="../../assets/Images/LogoPM.png">
+    <meta property="og:url" content="https://planime.com/pages/home/dashboard.html">
+    <meta property="og:site_name" content="PlaniMe">
+    <meta property="og:locale" content="es_ES">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Panel de Control - PlaniMe | Dashboard Personal">
+    <meta name="twitter:description" content="Gestiona tus planes de alimentación personalizados desde tu panel de control en PlaniMe.">
+    <meta name="twitter:image" content="../../assets/Images/LogoPM.png">
+    
+    <meta name="application-name" content="PlaniMe">
+    <meta name="theme-color" content="#467326">
+    <meta name="msapplication-TileColor" content="#467326">
+    <link rel="canonical" href="https://planime.com/pages/home/dashboard.html">
+    
+    <link rel="icon" href="../../assets/Images/LogoPM.png" type="image/png">
+    <link rel="apple-touch-icon" href="../../assets/Images/LogoPM.png">
+    
     <link rel="stylesheet" href="../../assets/css/animations/home/dashboard.css">
     <link rel="stylesheet" href="../../assets/css/base/home/dashboard.css">
     <link rel="stylesheet" href="../../assets/css/responsive/home/dashboard.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
-    <title>Panel</title>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Panel de Control - PlaniMe",
+        "description": "Panel de control personal para gestionar planes de alimentación personalizados, progreso nutricional y perfil de usuario",
+        "url": "https://planime.com/pages/home/dashboard.html",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "PlaniMe",
+            "url": "https://planime.com"
+        },
+        "about": {
+            "@type": "Organization",
+            "name": "PlaniMe",
+            "description": "Software de nutrición con planes 100% personalizados y totalmente gratis",
+            "url": "https://planime.com",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://planime.com/assets/Images/LogoPM.png"
+            },
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD",
+                "description": "Acceso gratuito a planes de alimentación personalizados"
+            },
+            "founder": {
+                "@type": "Person",
+                "name": "Diego Magaña Álvarez",
+                "jobTitle": "Arquitecto y desarrollador Full-Stack"
+            }
+        },
+        "mainEntity": {
+            "@type": "SoftwareApplication",
+            "name": "PlaniMe Dashboard",
+            "applicationCategory": "HealthApplication",
+            "operatingSystem": "Web",
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+            },
+            "featureList": [
+                "Creación de planes alimentarios personalizados",
+                "Seguimiento de progreso nutricional",
+                "Gestión de perfil de usuario",
+                "Acceso a planes guardados"
+            ]
+        }
+    }
+    </script>
 </head>
 <body class="dashboard-body">
-
+    
     <header class="dashboard-header">
         <h1 id="dashboard-title"></h1>
     </header>
-
+    
     <main class="dashboard-main">
         <article id="create-plan" class="dashboard-card">
-            <img src="../../assets/Images/AgregarImage.png" alt="">
+            <img src="../../assets/Images/AgregarImage.png" alt="Icono crear plan de alimentación personalizado">
             <h1>CREAR PLAN</h1>
         </article>
-        <article id="your-plans" class="dashboard-card">
-            <img src="../../assets/Images/DietaImage.png" alt="">
+        <div class="vertical-stack">
+            <article id="your-plans" class="dashboard-card half-height">
+            <img src="../../assets/Images/DietaImage.png" alt="Icono planes de alimentación guardados">
             <h1>TUS PLANES</h1>
+            </article>
+        <article id="progress" class="dashboard-card half-height">
+            <img src="../../assets/Images/progressImage.png" alt="Icono progreso nutricional">
+            <h1>PROGRESO</h1>
         </article>
+        </div>
         <div class="vertical-stack">
             <article id="profile" class="dashboard-card half-height">
-                <img src="../../assets/Images/PerfilImage.png" alt="">
+                <img src="../../assets/Images/PerfilImage.png" alt="Icono perfil de usuario">
                 <h1>PERFIL</h1>
             </article>
-            <article id="progress" class="dashboard-card half-height">
-                <img src="../../assets/Images/progressImage.png" alt="">
-                <h1>PROGRESO</h1>
+            <article id="soon" class="dashboard-card half-height">
+                <img id="soon_img" src="../../assets/Images/soon_image.png" alt="Icono próximamente nuevas funcionalidades">
+                <h1 id="soon_h1">PROXIMAMENTE!</h1>
             </article>
         </div>
     </main>
-
+    
     <script src="../../assets/js/dashboard.js"></script>
-
 </body>
 </html>
