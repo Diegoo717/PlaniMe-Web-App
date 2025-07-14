@@ -1,27 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <title>Iniciar Sesión - PlaniMe | Acceso a Planes de Alimentación Personalizados</title>
-    <meta name="description" content="Inicia sesión en PlaniMe y accede a tus planes de alimentación 100% personalizados. Ingresa a tu cuenta y continúa tu transformación nutricional." />
-    <meta name="keywords" content="login PlaniMe, iniciar sesión, acceso cuenta PlaniMe, ingresar PlaniMe, login nutrición, acceso planes alimentación, entrar cuenta PlaniMe" />
+
+    <title>
+      Iniciar Sesión - PlaniMe | Acceso a Planes de Alimentación Personalizados
+    </title>
+    <meta
+      name="description"
+      content="Inicia sesión en PlaniMe y accede a tus planes de alimentación 100% personalizados. Ingresa a tu cuenta y continúa tu transformación nutricional."
+    />
+    <meta
+      name="keywords"
+      content="login PlaniMe, iniciar sesión, acceso cuenta PlaniMe, ingresar PlaniMe, login nutrición, acceso planes alimentación, entrar cuenta PlaniMe"
+    />
     <meta name="author" content="PlaniMe - Ing. Diego Magaña Álvarez" />
     <meta name="robots" content="index, follow" />
     <meta name="language" content="es" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Iniciar Sesión - PlaniMe | Acceso a Planes Personalizados" />
-    <meta property="og:description" content="Inicia sesión en PlaniMe y accede a tus planes de alimentación 100% personalizados. Continúa tu transformación nutricional." />
+    <meta
+      property="og:title"
+      content="Iniciar Sesión - PlaniMe | Acceso a Planes Personalizados"
+    />
+    <meta
+      property="og:description"
+      content="Inicia sesión en PlaniMe y accede a tus planes de alimentación 100% personalizados. Continúa tu transformación nutricional."
+    />
     <meta property="og:image" content="../../assets/Images/LogoPM.png" />
-    <meta property="og:url" content="https://planime.com/pages/auth/login.html" />
+    <meta
+      property="og:url"
+      content="https://planime.com/pages/auth/login.html"
+    />
     <meta property="og:site_name" content="PlaniMe" />
     <meta property="og:locale" content="es_ES" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Iniciar Sesión - PlaniMe | Acceso a Planes Personalizados" />
-    <meta name="twitter:description" content="Inicia sesión y accede a tus planes de alimentación 100% personalizados en PlaniMe." />
+    <meta
+      name="twitter:title"
+      content="Iniciar Sesión - PlaniMe | Acceso a Planes Personalizados"
+    />
+    <meta
+      name="twitter:description"
+      content="Inicia sesión y accede a tus planes de alimentación 100% personalizados en PlaniMe."
+    />
     <meta name="twitter:image" content="../../assets/Images/LogoPM.png" />
 
     <meta name="application-name" content="PlaniMe" />
@@ -43,43 +66,43 @@
     />
 
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "Iniciar Sesión - PlaniMe",
-      "description": "Página de inicio de sesión de PlaniMe para acceder a planes de alimentación personalizados",
-      "url": "https://planime.com/pages/auth/login.html",
-      "isPartOf": {
-        "@type": "WebSite",
-        "name": "PlaniMe",
-        "url": "https://planime.com"
-      },
-      "about": {
-        "@type": "Organization",
-        "name": "PlaniMe",
-        "description": "Software de nutrición con planes 100% personalizados y totalmente gratis",
-        "url": "https://planime.com",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://planime.com/assets/Images/LogoPM.png"
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Iniciar Sesión - PlaniMe",
+        "description": "Página de inicio de sesión de PlaniMe para acceder a planes de alimentación personalizados",
+        "url": "https://planime.com/pages/auth/login.html",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "PlaniMe",
+          "url": "https://planime.com"
         },
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "USD",
-          "description": "Acceso gratuito a planes de alimentación personalizados"
-        },
-        "founder": {
-          "@type": "Person",
-          "name": "Diego Magaña Álvarez",
-          "jobTitle": "Arquitecto y desarrollador Full-Stack"
+        "about": {
+          "@type": "Organization",
+          "name": "PlaniMe",
+          "description": "Software de nutrición con planes 100% personalizados y totalmente gratis",
+          "url": "https://planime.com",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://planime.com/assets/Images/LogoPM.png"
+          },
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "description": "Acceso gratuito a planes de alimentación personalizados"
+          },
+          "founder": {
+            "@type": "Person",
+            "name": "Diego Magaña Álvarez",
+            "jobTitle": "Arquitecto y desarrollador Full-Stack"
+          }
         }
       }
-    }
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
     <img
       src="../../assets/Images/iconoRegresar.png"
       alt=""
@@ -97,7 +120,7 @@
       <input id="password" type="password" />
       <div id="password-error" class="error-messages"></div>
 
-      <button id="login-button" type="button">
+      <button id="login-button" type="submit">
         <span>Ingresar</span>
       </button>
 
@@ -149,30 +172,117 @@
     </form>
 
     <div id="emailModal" class="modal">
-        <div class="modal-content">
-            <h2>¿Olvidaste tu contraseña?</h2>
-            <h3>No te preocupes, puedes recuperarla.</h3>
-            <p>Ingresa tu email</p>
-            <input id="inputEmailModal" type="email" placeholder="tucorreo@algo.com">
-            <div id="emailModal-error" class="error-messages"></div>
-            <button type="button" id="emailModalAcceptBtn" class="modalAcceptBtn">Aceptar</button>
-            <img src="../../assets/Images/exitModalcon.png" alt="exitModalIcon" id="exitEmailModalIcon" class="exitModalIcon">
-        </div>
+      <div class="modal-content">
+        <h2>¿Olvidaste tu contraseña?</h2>
+        <h3>No te preocupes, puedes recuperarla.</h3>
+        <p>Ingresa tu email</p>
+        <input
+          id="inputEmailModal"
+          type="email"
+          placeholder="tucorreo@algo.com"
+        />
+        <div id="emailModal-error" class="error-messages"></div>
+        <button type="button" id="emailModalAcceptBtn" class="modalAcceptBtn">
+          Aceptar
+        </button>
+        <img
+          src="../../assets/Images/exitModalcon.png"
+          alt="exitModalIcon"
+          id="exitEmailModalIcon"
+          class="exitModalIcon"
+        />
+      </div>
     </div>
 
     <div id="codeModal" class="modal">
-        <div class="modal-content">
-            <h2>Por favor confirma tu identidad</h2>
-            <h3>Te hemos enviado un codigo de verificación a tu correo proporcionado.</h3>
-            <h3>(Favor de revisar en todos los recibidos y/o spam)</h3>
-            <p>Codigo de verificación</p>
-            <input id="inputCodeModal" type="text" placeholder="000000000">
-            <div id="emailModal-error" class="error-messages"></div>
-            <button type="button" id="codeModalAcceptBtn" class="modalAcceptBtn">Aceptar</button>
-            <img src="../../assets/Images/exitModalcon.png" alt="exitModalIcon" id="exitCodeModalIcon" class="exitModalIcon">
+      <div class="modal-content">
+        <h2>Por favor confirma tu identidad</h2>
+        <h3>
+          Te hemos enviado un codigo de verificación a tu correo proporcionado.
+        </h3>
+        <h3>(Favor de revisar en todos los recibidos y/o spam)</h3>
+        <p>Codigo de verificación</p>
+        <input id="inputCodeModal" type="text" placeholder="000000000" />
+        <div id="codeModal-error" class="error-messages"></div>
+        <button type="button" id="codeModalAcceptBtn" class="modalAcceptBtn">
+          Aceptar
+        </button>
+        <img
+          src="../../assets/Images/exitModalcon.png"
+          alt="exitModalIcon"
+          id="exitCodeModalIcon"
+          class="exitModalIcon"
+        />
+      </div>
+    </div>
+
+    <div id="passwordModal" class="modal">
+      <div class="modal-content">
+        <h2>Codigo verificado exitosamente!</h2>
+        <p>Nueva contraseña</p>
+        <input id="inputOnePasswordModal" type="password" placeholder="********" />
+        <p>Confirmar contraseña</p>
+        <input id="inputTwoPasswordModal" type="password" placeholder="********" />
+        <div id="passwordModal-error" class="error-messages"></div>
+        <button
+          type="button"
+          id="passwordModalAcceptBtn"
+          class="modalAcceptBtn"
+        >
+          Aceptar
+        </button>
+        <img
+          src="../../assets/Images/exitModalcon.png"
+          alt="exitModalIcon"
+          id="exitPasswordModalIcon"
+          class="exitModalIcon"
+        />
+      </div>
+    </div>
+
+    <div id="confirmationModal" class="modal">
+      <div class="modal-content">
+        <div style="text-align: center; margin-bottom: 20px">
+          <div
+            style="
+              width: 60px;
+              height: 60px;
+              background-color: #4caf50;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin: 0 auto 15px;
+            "
+          >
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="white"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="20,6 9,17 4,12"></polyline>
+            </svg>
+          </div>
+          <h2>¡Contraseña cambiada exitosamente!</h2>
+          <p>Tu contraseña ha sido actualizada correctamente.</p>
+          <p>Ya puedes ingresar nuevamente.</p>
+          <p id="problemsModalText">(Si tienes algún problema no dudes en ponerte en contacto con nosotros!)</p>
         </div>
+        <button
+          type="button"
+          id="confirmPasswordChangeBtn"
+          class="modalAcceptBtn"
+        >
+          Continuar
+        </button>
+      </div>
     </div>
 
     <script src="../../assets/js/login.js"></script>
-</body>
+  </body>
 </html>

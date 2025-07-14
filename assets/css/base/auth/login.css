@@ -375,3 +375,14 @@ form div a:hover {
 #codeModal h3{
   text-align: justify;
 }
+
+#problemsModalText{
+  font-size: 16px;
+  color: rgb(49, 49, 49);
+  margin-bottom: 0;
+}
+
+#confirmPasswordChangeBtn{
+  margin-top: 0;
+}
+
