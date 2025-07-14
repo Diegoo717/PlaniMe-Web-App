@@ -148,15 +148,28 @@
       </div>
     </form>
 
-    <div id="successModal" class="modal">
+    <div id="emailModal" class="modal">
         <div class="modal-content">
             <h2>¿Olvidaste tu contraseña?</h2>
             <h3>No te preocupes, puedes recuperarla.</h3>
             <p>Ingresa tu email</p>
             <input id="inputEmailModal" type="email" placeholder="tucorreo@algo.com">
             <div id="emailModal-error" class="error-messages"></div>
-            <button type="button" id="modalAcceptBtn">Aceptar</button>
-            <img src="../../assets/Images/exitModalcon.png" alt="exitModalIcon" id="exitModalIcon">
+            <button type="button" id="emailModalAcceptBtn" class="modalAcceptBtn">Aceptar</button>
+            <img src="../../assets/Images/exitModalcon.png" alt="exitModalIcon" id="exitEmailModalIcon" class="exitModalIcon">
+        </div>
+    </div>
+
+    <div id="codeModal" class="modal">
+        <div class="modal-content">
+            <h2>Por favor confirma tu identidad</h2>
+            <h3>Te hemos enviado un codigo de verificación a tu correo proporcionado.</h3>
+            <h3>(Favor de revisar en todos los recibidos y/o spam)</h3>
+            <p>Codigo de verificación</p>
+            <input id="inputCodeModal" type="text" placeholder="000000000">
+            <div id="emailModal-error" class="error-messages"></div>
+            <button type="button" id="codeModalAcceptBtn" class="modalAcceptBtn">Aceptar</button>
+            <img src="../../assets/Images/exitModalcon.png" alt="exitModalIcon" id="exitCodeModalIcon" class="exitModalIcon">
         </div>
     </div>
 

@@ -9,23 +9,29 @@ const inputPassword = document.getElementById("password");
 const button = document.getElementById("login-button");
 const buttonGoogle = document.querySelector(".gsi-material-button")
 
-const emailModal = document.getElementById("successModal")
-const inputEmailModal = document.getElementById("inputEmailModal")
 const passwordRecoberyButton = document.getElementById("passwordRecobery")
-const modalAcceptBtn = document.getElementById("modalAcceptBtn")
-const exitModalIcon = document.getElementById("exitModalIcon")
+
+const emailModal = document.getElementById("emailModal")
+const inputEmailModal = document.getElementById("inputEmailModal")
+const emailModalAcceptBtn = document.getElementById("emailModalAcceptBtn")
+const exitEmailModalIcon = document.getElementById("exitEmailModalIcon")
+
+const codeModal = document.getElementById("codeModal")
+const inputCodeModal = document.getElementById("inputCodeModal")
+const codeModalAcceptBtn = document.getElementById("codeModalAcceptBtn")
+const exitCodeModalIcon = document.getElementById("exitCodeModalIcon")
 
 let flag = false;
-
-exitModalIcon.addEventListener("click", (e)=>{
-    emailModal.style.display = "none"
-})
 
 passwordRecoberyButton.addEventListener("click", (e)=>{
     openEmailModal()
 })
 
-modalAcceptBtn.addEventListener("click", async (e) =>{
+exitEmailModalIcon.addEventListener("click", (e)=>{
+    emailModal.style.display = "none"
+})
+
+emailModalAcceptBtn.addEventListener("click", async (e) =>{
     e.preventDefault()
     emailModalValidate()
 
@@ -46,9 +52,52 @@ modalAcceptBtn.addEventListener("click", async (e) =>{
                     throw new Error(err.error || "Email not found");
                 });
             }
+            localStorage.setItem("emailSaved", data.email);
+            emailModal.style.display = "none"
+            codeModal.style.display = "block"
             return response.json();
         })
         .then(data => {
+            console.log("Response: ", data);
+        })
+        .catch(error => {
+            console.error("login error:", error.message);
+            emailError.textContent = error.message;
+            emailError.style.display = "inline-block";
+        });
+})
+
+exitCodeModalIcon.addEventListener("click", (e)=>{
+    codeModal.style.display = "none"
+})
+
+codeModalAcceptBtn.addEventListener("click", async (e) =>{
+    e.preventDefault()
+    codeModalValidate()
+
+    const data = {
+        email: localStorage.getItem("emailSaved"),
+        code: inputCodeModal.value.trim()
+    }
+
+    const response = await fetch('http://localhost:5000/api/codeVerification',{
+        method: 'Post',
+        headers:{
+            'Content-type': 'application/json',
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => {
+            if (!response.ok) {
+                return response.json().then(err => {
+                    throw new Error(err.error || "Invalid code");
+                });
+            }
+            codeModal.style.display = "none"
+            return response.json();
+        })
+        .then(data => {
+            localStorage.setItem("token", data.token)
             console.log("Response: ", data);
         })
         .catch(error => {
@@ -111,6 +160,22 @@ function resetErrors() {
     passwordError.style.display = "none";
 }
 
+function showError(element, message) {
+    element.textContent = message;
+    element.style.display = "block";
+    element.style.marginBottom = "30px";
+}
+
+function showModalError(element, message) {
+    element.textContent = message;
+    element.style.display = "block";
+    element.style.marginBottom = "0px";
+}
+
+function openEmailModal(){
+    emailModal.style.display = "flex"
+}
+
 function emailValidate() {
     const emailValue = inputEmail.value.trim();
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -137,6 +202,25 @@ function emailModalValidate() {
     }
 }
 
+function codeModalValidate() {
+    const codeValue = inputCodeModal.value.trim(); 
+    const codeRegex = /^[a-zA-Z0-9]+$/; 
+    
+    if(codeValue === "") {
+        showModalError(codeModalError, "El código es obligatorio");
+        flag = false;
+    } else if(codeValue.length > 9) {
+        showModalError(codeModalError, "El código no puede tener más de 9 caracteres");
+        flag = false;
+    } else if(codeValue !== inputCodeModal.value) { 
+        showModalError(codeModalError, "El código no debe tener espacios al principio ni al final");
+        flag = false;
+    } else if(!codeRegex.test(codeValue)) {
+        showModalError(codeModalError, "Solo se permiten letras y números en el código");
+        flag = false;
+    }
+}
+
 function passwordValidate() {
     const passwordValue = inputPassword.value;
     
@@ -156,20 +240,4 @@ function passwordValidate() {
         showError(passwordError, "La contraseña debe contener al menos un carácter especial");
         flag = false;
     }
-}
-
-function showError(element, message) {
-    element.textContent = message;
-    element.style.display = "block";
-    element.style.marginBottom = "30px";
-}
-
-function showModalError(element, message) {
-    element.textContent = message;
-    element.style.display = "block";
-    element.style.marginBottom = "0px";
-}
-
-function openEmailModal(){
-    emailModal.style.display = "flex"
 }
