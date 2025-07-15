@@ -1,46 +1,164 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Perfil de Usuario - PlaniMe | Gestión de Cuenta y Datos Personales</title>
+    <meta name="description" content="Gestiona tu perfil de usuario en PlaniMe. Visualiza y edita tus datos personales, información de cuenta y configuraciones de tu plan alimenticio personalizado.">
+    <meta name="keywords" content="perfil usuario, datos personales, configuración cuenta, editar perfil, información usuario, PlaniMe perfil, gestión cuenta">
+    <meta name="author" content="PlaniMe - Ing. Diego Magaña Álvarez">
+    <meta name="robots" content="noindex, follow">
+    <meta name="language" content="es">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Perfil de Usuario - PlaniMe | Gestión de Cuenta Personal">
+    <meta property="og:description" content="Accede a tu perfil de usuario en PlaniMe. Gestiona tus datos personales y configuraciones de tu plan alimenticio personalizado.">
+    <meta property="og:image" content="../../assets/Images/LogoPM.png">
+    <meta property="og:url" content="https://planime.com/pages/user/profile.html">
+    <meta property="og:site_name" content="PlaniMe">
+    <meta property="og:locale" content="es_ES">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Perfil de Usuario - PlaniMe | Gestión de Cuenta Personal">
+    <meta name="twitter:description" content="Gestiona tu perfil y datos personales en PlaniMe. Edita información y configuraciones de tu cuenta.">
+    <meta name="twitter:image" content="../../assets/Images/LogoPM.png">
+    
+    <meta name="application-name" content="PlaniMe">
+    <meta name="theme-color" content="#467326">
+    <meta name="msapplication-TileColor" content="#467326">
+    <link rel="canonical" href="https://planime.com/pages/user/profile.html">
+    
+    <link rel="icon" href="../../assets/Images/LogoPM.png" type="image/png">
+    <link rel="apple-touch-icon" href="../../assets/Images/LogoPM.png">
+    
     <link rel="stylesheet" href="../../assets/css/animations/user/profile.css">
     <link rel="stylesheet" href="../../assets/css/base/user/profile.css">
     <link rel="stylesheet" href="../../assets/css/responsive/user/profile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
-    <title>Perfil</title>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Perfil de Usuario - PlaniMe",
+        "description": "Página de perfil de usuario para gestión de datos personales y configuraciones de cuenta en PlaniMe",
+        "url": "https://planime.com/pages/user/profile.html",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "PlaniMe",
+            "url": "https://planime.com"
+        },
+        "about": {
+            "@type": "Organization",
+            "name": "PlaniMe",
+            "description": "Software de nutrición con planes 100% personalizados y totalmente gratis",
+            "url": "https://planime.com",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://planime.com/assets/Images/LogoPM.png"
+            },
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD",
+                "description": "Acceso gratuito a planes de alimentación personalizados"
+            },
+            "founder": {
+                "@type": "Person",
+                "name": "Diego Magaña Álvarez",
+                "jobTitle": "Arquitecto y desarrollador Full-Stack"
+            }
+        },
+        "mainEntity": {
+            "@type": "SoftwareApplication",
+            "name": "PlaniMe - Gestión de Perfil",
+            "applicationCategory": "HealthApplication",
+            "operatingSystem": "Web",
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+            },
+            "featureList": [
+                "Gestión de datos personales",
+                "Edición de información de perfil",
+                "Configuración de cuenta de usuario",
+                "Visualización de datos antropométricos",
+                "Gestión de sesión de usuario"
+            ]
+        },
+        "potentialAction": [
+            {
+                "@type": "EditAction",
+                "name": "Editar Perfil",
+                "description": "Modificar información personal y configuraciones de cuenta",
+                "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://planime.com/pages/user/profile.html"
+                }
+            },
+            {
+                "@type": "ViewAction",
+                "name": "Ver Perfil",
+                "description": "Visualizar información personal y datos de cuenta",
+                "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://planime.com/pages/user/profile.html"
+                }
+            }
+        ]
+    }
+    </script>
 </head>
 <body class="profile-body">
 
     <img class="back-icon" src="../../assets/Images/iconoRegresar.png" alt="" onclick="location.href='../home/dashboard.html'">
-    
+              
     <main class="profile-container">
-
-        <div class="row1">
-            <img src="../../assets/Images/PerfilImage.png" alt="">
-            <img src="../../assets/Images/editarPerfilImage.png" alt="">
+        <div class="title">
+            <h1>Perfil</h1>
         </div>
-
-        <div class="row2">
-            <div class="info">
-                <label>Nombre: </label>
-                <p class="dynamic-content"></p>
+        <div class="icon_profile_container">
+            <img id="profile_image" src="../../assets/Images/PerfilImage.png" alt="">
+        </div>
+        <div class="subtitle_container">
+            <h2>Datos de usuario</h2>
+        </div>
+        <div class="name_container">
+            <h3 class="dynamic-content">Name</h3>
+        </div>
+        <div class="info_container">
+            <div class="rol_container">
+                <h4>Rol</h4>
+                <p>.....</p>
             </div>
-            <div class="info">
-                <label>Correo: </label>
-                <p class="dynamic-content2"></p>
+            <div class="city_container">
+                <h4>Ciudad</h4>
+                <p>.....</p>
+            </div>
+            <div class="age_container">
+                <h4>Edad</h4>
+                <p>.....</p>
+            </div>
+            <div class="email_container">
+                <h4>Correo</h4>
+                <p class="dynamic-content2">Email</p>
             </div>
         </div>
-            
-        <div class="row3">
-            <button class="reset-password-btn">Reestablecer contraseña</button>
-            <button class="logout-btn">Cerrar sesión</button>
+                 
+        <div class="buttons_container">
+            <button class="edit_button">
+                Editar Perfil
+            </button>
+            <button class="logout_button">
+                Cerrar Sesión
+            </button>
         </div>
-
     </main>
 
     <script src="../../assets/js/profile.js"></script>
-
 </body>
 </html>

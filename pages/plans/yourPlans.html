@@ -3,13 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tus Planes</title>
+    
+    <title>Tus Planes Alimenticios - PlaniMe | Gestiona y Descarga tus Planes Nutricionales</title>
+    <meta name="description" content="Visualiza, gestiona y descarga todos tus planes alimenticios personalizados en PlaniMe. Busca, filtra y accede a tus planes nutricionales guardados.">
+    <meta name="keywords" content="tus planes alimenticios, planes nutricionales guardados, gestionar planes PlaniMe, descargar plan PDF, planes personalizados historial, búsqueda planes">
+    <meta name="author" content="PlaniMe - Ing. Diego Magaña Álvarez">
+    <meta name="robots" content="noindex, follow">
+    <meta name="language" content="es">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Tus Planes Alimenticios - PlaniMe | Gestiona tus Planes Nutricionales">
+    <meta property="og:description" content="Accede a todos tus planes alimenticios personalizados. Visualiza, descarga y gestiona tus planes nutricionales desde tu biblioteca personal.">
+    <meta property="og:image" content="../../assets/Images/LogoPM.png">
+    <meta property="og:url" content="https://planime.com/pages/plans/yourPlans.html">
+    <meta property="og:site_name" content="PlaniMe">
+    <meta property="og:locale" content="es_ES">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tus Planes Alimenticios - PlaniMe | Gestiona tus Planes">
+    <meta name="twitter:description" content="Visualiza y gestiona todos tus planes alimenticios personalizados en PlaniMe. Descarga PDFs y mantén control de tu historial nutricional.">
+    <meta name="twitter:image" content="../../assets/Images/LogoPM.png">
+    
+    <meta name="application-name" content="PlaniMe">
+    <meta name="theme-color" content="#467326">
+    <meta name="msapplication-TileColor" content="#467326">
+    <link rel="canonical" href="https://planime.com/pages/plans/yourPlans.html">
+    
+    <link rel="icon" href="../../assets/Images/LogoPM.png" type="image/png">
+    <link rel="apple-touch-icon" href="../../assets/Images/LogoPM.png">
+    
     <link rel="stylesheet" href="../../assets/css/animations/plans/yourPlans.css">
     <link rel="stylesheet" href="../../assets/css/base/plans/yourPlans.css">
     <link rel="stylesheet" href="../../assets/css/responsive/plans/yourPlans.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Tus Planes Alimenticios - PlaniMe",
+        "description": "Biblioteca personal para gestionar, visualizar y descargar planes de alimentación personalizados creados previamente",
+        "url": "https://planime.com/pages/plans/yourPlans.html",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "PlaniMe",
+            "url": "https://planime.com"
+        },
+        "about": {
+            "@type": "Organization",
+            "name": "PlaniMe",
+            "description": "Software de nutrición con planes 100% personalizados y totalmente gratis",
+            "url": "https://planime.com",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://planime.com/assets/Images/LogoPM.png"
+            },
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD",
+                "description": "Acceso gratuito a planes de alimentación personalizados"
+            },
+            "founder": {
+                "@type": "Person",
+                "name": "Diego Magaña Álvarez",
+                "jobTitle": "Arquitecto y desarrollador Full-Stack"
+            }
+        },
+        "mainEntity": {
+            "@type": "SoftwareApplication",
+            "name": "PlaniMe - Gestión de Planes",
+            "applicationCategory": "HealthApplication",
+            "operatingSystem": "Web",
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+            },
+            "featureList": [
+                "Visualización de planes alimenticios guardados",
+                "Búsqueda y filtrado de planes por estado",
+                "Descarga de planes en formato PDF",
+                "Gestión de historial nutricional",
+                "Eliminación de planes obsoletos",
+                "Vista detallada de datos antropométricos"
+            ]
+        },
+        "potentialAction": [
+            {
+                "@type": "ViewAction",
+                "name": "Ver Planes Alimenticios",
+                "description": "Visualizar todos los planes alimenticios guardados",
+                "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://planime.com/pages/plans/yourPlans.html"
+                }
+            },
+            {
+                "@type": "SearchAction",
+                "name": "Buscar Plan",
+                "description": "Buscar planes específicos por nombre o características",
+                "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://planime.com/pages/plans/yourPlans.html?search={search_term_string}"
+                },
+                "query-input": "required name=search_term_string"
+            },
+            {
+                "@type": "DownloadAction",
+                "name": "Descargar Plan PDF",
+                "description": "Descargar plan alimenticio en formato PDF",
+                "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://planime.com/pages/plans/yourPlans.html"
+                }
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
     <div class="container">
