@@ -32,7 +32,7 @@ button.addEventListener("click", function validate(event){
             password: inputPassword.value
         };
     
-        fetch('http://localhost:5000/api/register', {
+        fetch('https://planime-rest-api.diecode.lat/api/register', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

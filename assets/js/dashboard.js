@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       await new Promise((resolve) => setTimeout(resolve, 500));
 
       const response = await fetch(
-        "http://localhost:5000/api/auth/google-token",
+        "https://planime-rest-api.diecode.lat/api/auth/google-token",
         {
           method: "GET",
           credentials: "include",
@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     try {
       const sessionResponse = await fetch(
-        "http://localhost:5000/api/protected/session",
+        "https://planime-rest-api.diecode.lat/api/protected/session",
         {
           method: "GET",
           headers: {
@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       console.log("Sesión válida:", sessionData);
 
       const profileResponse = await fetch(
-        "http://localhost:5000/api/protected/profile",
+        "https://planime-rest-api.diecode.lat/api/protected/profile",
         {
           method: "GET",
           headers: {

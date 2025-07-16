@@ -54,7 +54,7 @@
             email: inputEmailModal.value.trim()
         }
 
-        const response = await fetch('http://localhost:5000/api/emailForRecobery',{
+        const response = await fetch('https://planime-rest-api.diecode.lat/api/emailForRecobery',{
             method: 'Post',
             headers:{
                 'Content-type': 'application/json',
@@ -98,7 +98,7 @@
             code: inputCodeModal.value.trim()
         }
 
-        const response = await fetch('http://localhost:5000/api/codeVerification',{
+        const response = await fetch('https://planime-rest-api.diecode.lat/api/codeVerification',{
             method: 'Post',
             headers:{
                 'Content-type': 'application/json',
@@ -149,7 +149,7 @@
             return;
         }
 
-        const response = await fetch('http://localhost:5000/api/protected/changePassword',{
+        const response = await fetch('https://planime-rest-api.diecode.lat/api/protected/changePassword',{
             method: 'Put',
             headers:{
                 'Content-type': 'application/json',
@@ -183,7 +183,7 @@
 
     buttonGoogle.addEventListener("click", async (e) =>{
         e.preventDefault()
-        window.location.href = "http://localhost:5000/auth/google";
+        window.location.href = "https://planime-rest-api.diecode.lat/auth/google";
     })
 
     button.addEventListener("click", function validate(event) {  
@@ -200,7 +200,7 @@
                 password: inputPassword.value
             };
 
-            fetch('http://localhost:5000/api/login', {
+            fetch('https://planime-rest-api.diecode.lat/api/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

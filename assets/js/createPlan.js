@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
 
-    fetch("http://localhost:5000/api/protected/session", {
+    fetch("https://planime-rest-api.diecode.lat/api/protected/session", {
         method: "GET",
         headers: {
             Authorization: `Bearer ${token}`
@@ -83,7 +83,7 @@ button.addEventListener("click", async function(event) {
         button.disabled = true;
         button.textContent = "Generando...";
 
-        const response = await fetch("http://localhost:5000/api/protected/generatePlan", {
+        const response = await fetch("https://planime-rest-api.diecode.lat/api/protected/generatePlan", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

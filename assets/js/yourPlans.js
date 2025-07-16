@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
 
-    fetch("http://localhost:5000/api/protected/session", {
+    fetch("https://planime-rest-api.diecode.lat/api/protected/session", {
         method: "GET",
         headers: {
             Authorization: `Bearer ${token}`
@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function loadUserPlans(token) {
     document.body.style.overflow = "hidden"; 
-    fetch("http://localhost:5000/api/protected/getPlansByID", {
+    fetch("https://planime-rest-api.diecode.lat/api/protected/getPlansByID", {
         method: "GET",
         headers: {
             Authorization: `Bearer ${token}`
@@ -172,12 +172,12 @@ function createPlanCard(plan, token) {
     const activityMap = {
         'ligero': 'Ligero (1-2 días/semana)',
         'moderado': 'Moderado (3-4 días/semana)',
-        'intenso': 'Intenso (5-7 días/semana)'
+        'activo': 'Intenso (5-7 días/semana)'
     };
     const goalMap = {
         'perder': 'Bajar de peso',
         'mantener': 'Mantener peso',
-        'ganar': 'Ganar masa muscular'
+        'aumentar': 'Ganar masa muscular'
     };
     
     planCard.innerHTML = `
@@ -263,7 +263,7 @@ function deletePlan(planId, token) {
 function executeDeletePlan() {
     if (!currentPlanToDelete || !currentTokenForDelete) return;
     
-    fetch(`http://localhost:5000/api/protected/deletePlanByID/${currentPlanToDelete}`, {
+    fetch(`https://planime-rest-api.diecode.lat/api/protected/deletePlanByID/${currentPlanToDelete}`, {
         method: 'DELETE',
         headers: {
             'Authorization': `Bearer ${currentTokenForDelete}`,
@@ -318,12 +318,12 @@ function showPlanDetails(plan, expiresDateStr, token) {
     const activityMap = {
         'ligero': 'Ligero (1-2 días/semana)',
         'moderado': 'Moderado (3-4 días/semana)',
-        'intenso': 'Intenso (5-7 días/semana)'
+        'activo': 'Intenso (5-7 días/semana)'
     };
     const goalMap = {
         'perder': 'Bajar de peso',
         'mantener': 'Mantener peso',
-        'ganar': 'Ganar masa muscular'
+        'aumentar': 'Ganar masa muscular'
     };
 
     const createdAt = new Date(plan.details.createdAt);

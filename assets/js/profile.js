@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  fetch("http://localhost:5000/api/protected/session", {
+  fetch("https://planime-rest-api.diecode.lat/api/protected/session", {
     method: "GET",
     headers: {
       Authorization: `Bearer ${token}`,
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .then((data) => {
       console.log("Sesión válida:", data);
-      fetch("http://localhost:5000/api/protected/profile", {
+      fetch("https://planime-rest-api.diecode.lat/api/protected/profile", {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,
