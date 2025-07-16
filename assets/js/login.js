@@ -218,7 +218,7 @@
             .then(data => {
                 console.log("Login succesful:", data);
                 localStorage.setItem("token", data.token);
-                window.location.href = '../../pages/home/dashboard.html';
+                window.location.href = '/pages/home/dashboard.html';
             })
             .catch(error => {
                 console.error("login error:", error.message);

@@ -53,5 +53,5 @@ const logOut = document.querySelector(".logout_button");
 
 logOut.addEventListener("click", function logOut() {
   localStorage.removeItem("token");
-  window.location.href = "../../public/index.html";
+  window.location.href = "/public/index.html";
 });

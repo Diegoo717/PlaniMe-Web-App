@@ -152,25 +152,25 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     if (createPlan) {
       createPlan.addEventListener("click", function () {
-        window.location.href = "../../pages/plans/createPlan.html";
+        window.location.href = "/pages/plans/createPlan.html";
       });
     }
 
     if (yourPlans) {
       yourPlans.addEventListener("click", function () {
-        window.location.href = "../../pages/plans/yourPlans.html";
+        window.location.href = "/pages/plans/yourPlans.html";
       });
     }
 
     if (profile) {
       profile.addEventListener("click", function () {
-        window.location.href = "../../pages/user/profile.html";
+        window.location.href = "/pages/user/profile.html";
       });
     }
 
     if (yourProgress) {
       yourProgress.addEventListener("click", function () {
-        window.location.href = "../../pages/user/yourProgress.html";
+        window.location.href = "/pages/user/yourProgress.html";
       });
     }
   };

@@ -127,7 +127,7 @@ function showSuccessModal() {
     
     acceptBtn.addEventListener("click", function() {
         modal.style.display = "none";
-        window.location.href = "../../pages/home/dashboard.html";
+        window.location.href = "/pages/home/dashboard.html";
     }, { once: true }); 
 }
 

@@ -11,6 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     modalAcceptBtn.addEventListener('click', function() {
         modal.style.display = 'none';
-        window.location.href = "../../public/index.html";
+        window.location.href = "/public/index.html";
     });
 });
