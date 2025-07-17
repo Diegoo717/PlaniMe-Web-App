@@ -6,7 +6,7 @@ let weightRecords = [];
             currentToken = localStorage.getItem("token");
 
             if (!currentToken) {
-                window.location.href = "login.html";
+                window.location.href = "l/pages/auth/login.html";
                 return;
             }
 

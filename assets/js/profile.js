@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const token = localStorage.getItem("token");
 
   if (!token) {
-    window.location.href = "login.html";
+    window.location.href = "/pages/auth/login.html";
     return;
   }
 
@@ -53,5 +53,5 @@ const logOut = document.querySelector(".logout_button");
 
 logOut.addEventListener("click", function logOut() {
   localStorage.removeItem("token");
-  window.location.href = "/public/index.html";
+  window.location.href = "/index.html";
 });

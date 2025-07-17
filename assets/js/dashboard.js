@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const redirectToLogin = (reason) => {
     console.log("Redirigiendo al login:", reason);
     localStorage.removeItem("token");
-    window.location.href = "login.html";
+    window.location.href = "/pages/auth/login.html";
   };
 
   const showDashboard = (profileData) => {
