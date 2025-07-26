@@ -4,30 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>PlaniMe - Planes de Alimentación Personalizados | Software de Nutrición Gratis</title>
-    <meta name="description" content="PlaniMe - El mejor software de nutrición con planes 100% personalizados y totalmente gratis. Diseñamos tu dieta, conquistas tus metas. Planes keto, veganos, deportivos y más." />
-    <meta name="keywords" content="PlaniMe, planes de alimentación, nutrición personalizada, dieta personalizada, software nutrición gratis, planes nutricionales, dieta keto, dieta vegana, alimentación deportiva, planes alimenticios" />
+    <title>
+      PlaniMe - Planes de Alimentación Personalizados | Software de Nutrición
+      Gratis
+    </title>
+    <meta
+      name="description"
+      content="PlaniMe - El mejor software de nutrición con planes 100% personalizados y totalmente gratis. Diseñamos tu dieta, conquistas tus metas. Planes keto, veganos, deportivos y más."
+    />
+    <meta
+      name="keywords"
+      content="PlaniMe, planes de alimentación, nutrición personalizada, dieta personalizada, software nutrición gratis, planes nutricionales, dieta keto, dieta vegana, alimentación deportiva, planes alimenticios"
+    />
     <meta name="author" content="PlaniMe" />
     <meta name="robots" content="index, follow" />
     <meta name="language" content="es" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="PlaniMe - Planes de Alimentación Personalizados" />
-    <meta property="og:description" content="El mejor software de nutrición con planes 100% personalizados ¡y totalmente gratis! Diseñamos tu dieta, conquistas tus metas." />
+    <meta
+      property="og:title"
+      content="PlaniMe - Planes de Alimentación Personalizados"
+    />
+    <meta
+      property="og:description"
+      content="El mejor software de nutrición con planes 100% personalizados ¡y totalmente gratis! Diseñamos tu dieta, conquistas tus metas."
+    />
     <meta property="og:image" content="/assets/Images/LogoPM.png" />
-    <meta property="og:url" content="https://planime.com" />
+    <meta property="og:url" content="https://planime.diecode.lat" />
     <meta property="og:site_name" content="PlaniMe" />
     <meta property="og:locale" content="es_ES" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="PlaniMe - Planes de Alimentación Personalizados" />
-    <meta name="twitter:description" content="El mejor software de nutrición con planes 100% personalizados ¡y totalmente gratis!" />
+    <meta
+      name="twitter:title"
+      content="PlaniMe - Planes de Alimentación Personalizados"
+    />
+    <meta
+      name="twitter:description"
+      content="El mejor software de nutrición con planes 100% personalizados ¡y totalmente gratis!"
+    />
     <meta name="twitter:image" content="/assets/Images/LogoPM.png" />
 
     <meta name="application-name" content="PlaniMe" />
     <meta name="theme-color" content="#467326" />
     <meta name="msapplication-TileColor" content="#467326" />
-    <link rel="canonical" href="https://planime.com" />
+    <link rel="canonical" href="https://planime.diecode.lat" />
 
     <link rel="icon" href="/assets/Images/LogoPM.png" type="image/png" />
     <link rel="apple-touch-icon" href="/assets/Images/LogoPM.png" />
@@ -44,45 +65,86 @@
     />
 
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebApplication",
-      "name": "PlaniMe",
-      "description": "El mejor software de nutrición con planes 100% personalizados y totalmente gratis",
-      "url": "https://planime.com",
-      "applicationCategory": "HealthApplication",
-      "operatingSystem": "Web",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      },
-      "author": {
-        "@type": "Organization",
-        "name": "PlaniMe"
-      },
-      "publisher": {
-        "@type": "Organization",
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
         "name": "PlaniMe",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "/assets/Images/LogoPM.png"
+        "description": "El mejor software de nutrición con planes 100% personalizados y totalmente gratis",
+        "url": "https://planime.com",
+        "applicationCategory": "HealthApplication",
+        "operatingSystem": "Web",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "author": {
+          "@type": "Organization",
+          "name": "PlaniMe"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "PlaniMe",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "/assets/Images/LogoPM.png"
+          }
         }
       }
-    }
     </script>
   </head>
   <body>
+    
+    <div id="app-download-modal" class="app-modal" aria-label="Modal de descarga de aplicación móvil">
+        <div class="app-modal-content">
+            <button class="app-modal-close" id="close-modal" aria-label="Cerrar modal">
+                x
+            </button>
+            
+            <div class="app-modal-body">
+                <div class="app-header">
+                    <div class="app-icon">📱</div>
+                    <div class="app-text-header">
+                        <p class="app-title">
+                            ¡Para la mejor experiencia en dispositivos móviles!
+                        </p>
+                        <p class="app-subtitle">¡Descarga nuestra app!</p>
+                    </div>
+                </div>
+                
+                <div class="app-button-container">
+                    <button class="app-download-btn" id="download-app-btn" aria-label="Descargar aplicación PlaniMe">
+                        Descargar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <header>
       <nav role="navigation" aria-label="Navegación principal">
         <div class="nav-div">
           <h1 class="tittle">PlaniMe</h1>
-          <img src="/assets/Images/LogoPM.png" alt="PlaniMe Logo - Software de Nutrición Personalizada" class="logo" />
+          <img
+            src="/assets/Images/LogoPM.png"
+            alt="PlaniMe Logo - Software de Nutrición Personalizada"
+            class="logo"
+          />
         </div>
         <div class="buttons">
-          <a href="/pages/auth/login.html" aria-label="Iniciar Sesión en PlaniMe">Iniciar Sesion</a>
-          <a href="/pages/auth/register.html" aria-label="Registrarse en PlaniMe">Registrarse</a>
-          <a href="/pages/contact/aboutUs.html" aria-label="Acerca de PlaniMe">Sobre nosotros</a>
+          <a
+            href="/pages/auth/login.html"
+            aria-label="Iniciar Sesión en PlaniMe"
+            >Iniciar Sesion</a
+          >
+          <a
+            href="/pages/auth/register.html"
+            aria-label="Registrarse en PlaniMe"
+            >Registrarse</a
+          >
+          <a href="/pages/contact/aboutUs.html" aria-label="Acerca de PlaniMe"
+            >Sobre nosotros</a
+          >
         </div>
       </nav>
     </header>
@@ -94,10 +156,12 @@
           El mejor software de nutrición con planes 100% personalizados ¡y
           totalmente gratis!
         </h2>
-        <h2 class="titulo-con-borde">
-        </h2>
+        <h2 class="titulo-con-borde"></h2>
         <div class="main-button">
-          <button onclick="location.href='/pages/auth/login.html'" aria-label="Comenzar con PlaniMe - Crear plan de alimentación personalizado">
+          <button
+            onclick="location.href='/pages/auth/login.html'"
+            aria-label="Comenzar con PlaniMe - Crear plan de alimentación personalizado"
+          >
             Comenzar
             <span></span>
             <span></span>
@@ -107,7 +171,10 @@
         </div>
       </div>
       <div>
-        <img src="/assets/Images/ironbananan.png" alt="PlaniMe - Nutrición y Alimentación Saludable" />
+        <img
+          src="/assets/Images/ironbananan.png"
+          alt="PlaniMe - Nutrición y Alimentación Saludable"
+        />
       </div>
     </main>
 
@@ -174,7 +241,11 @@
         </p>
       </section>
       <aside class="image">
-        <img src="/assets/Images/cap3.jpg" alt="Interfaz de PlaniMe - Software de nutrición fácil de usar" width="800px" />
+        <img
+          src="/assets/Images/cap3.jpg"
+          alt="Interfaz de PlaniMe - Software de nutrición fácil de usar"
+          width="800px"
+        />
       </aside>
     </article>
     <article id="article2" itemscope itemtype="https://schema.org/Article">
@@ -210,13 +281,29 @@
         </p>
       </section>
       <aside class="image">
-        <img src="/assets/Images/user.jpg" alt="Seguridad y privacidad en PlaniMe - Protección de datos" width="800px" />
+        <img
+          src="/assets/Images/user.jpg"
+          alt="Seguridad y privacidad en PlaniMe - Protección de datos"
+          width="800px"
+        />
       </aside>
     </article>
 
-    <footer role="contentinfo" itemscope itemtype="https://schema.org/Organization">
-      <a href="/pages/contact/contactUs.html" aria-label="Contactar con PlaniMe" itemprop="url">Contactanos</a>
-      <p class="rights" itemprop="copyrightNotice">© 2025 <span id="name" itemprop="name">PlaniMe</span>. Todos los derechos reservados.</p>
+    <footer
+      role="contentinfo"
+      itemscope
+      itemtype="https://schema.org/Organization"
+    >
+      <a
+        href="/pages/contact/contactUs.html"
+        aria-label="Contactar con PlaniMe"
+        itemprop="url"
+        >Contactanos</a
+      >
+      <p class="rights" itemprop="copyrightNotice">
+        © 2025 <span id="name" itemprop="name">PlaniMe</span>. Todos los
+        derechos reservados.
+      </p>
     </footer>
   </body>
 </html>

@@ -32,6 +32,35 @@
   .info article{
     margin: 20px;
   }
+
+  .app-modal-content {
+    width: 300px;
+    padding: 18px;
+  }
+
+  .app-modal-close {
+    font-size: 24px;
+    top: 12px;
+    right: 18px;
+  }
+
+  .app-icon {
+    font-size: 40px;
+  }
+
+  .app-title {
+    font-size: 15px;
+  }
+
+  .app-subtitle {
+    font-size: 17px;
+  }
+
+  .app-download-btn {
+    padding: 12px 22px;
+    font-size: 17px;
+    max-width: 180px;
+  }
 }
 
 @media (min-width: 1401px) and (max-width: 1558px) {
@@ -54,6 +83,35 @@
   
   article aside img {
     width: min(600px, 88%);
+  }
+
+  .app-modal-content {
+    width: 320px;
+    padding: 20px;
+  }
+
+  .app-modal-close {
+    font-size: 26px;
+    top: 14px;
+    right: 20px;
+  }
+
+  .app-icon {
+    font-size: 42px;
+  }
+
+  .app-title {
+    font-size: 16px;
+  }
+
+  .app-subtitle {
+    font-size: 18px;
+  }
+
+  .app-download-btn {
+    padding: 13px 24px;
+    font-size: 18px;
+    max-width: 190px;
   }
 }
 
@@ -155,6 +213,39 @@
     width: 190px;
     height: 65px;
     font-size: 20px;
+  }
+
+  .app-modal-content {
+    width: 280px;
+    padding: 16px;
+  }
+
+  .app-modal-close {
+    font-size: 20px;
+    top: 10px;
+    right: 14px;
+  }
+
+  .app-icon {
+    font-size: 32px;
+  }
+
+  .app-title {
+    font-size: 13px;
+  }
+
+  .app-subtitle {
+    font-size: 15px;
+  }
+
+  .app-download-btn {
+    padding: 10px 18px;
+    font-size: 15px;
+    max-width: 150px;
+  }
+
+  .app-button-container {
+    margin-left: 10px;
   }
 }
 
@@ -272,11 +363,45 @@
   footer p{
     font-size: 16px;
   }
+
+  .app-modal-content {
+    width: 290px;
+    padding: 17px;
+  }
+
+  .app-modal-close {
+    font-size: 22px;
+    top: 11px;
+    right: 16px;
+  }
+
+  .app-icon {
+    font-size: 36px;
+  }
+
+  .app-title {
+    font-size: 14px;
+  }
+
+  .app-subtitle {
+    font-size: 16px;
+  }
+
+  .app-download-btn {
+    padding: 11px 20px;
+    font-size: 16px;
+    max-width: 160px;
+  }
+
+  .app-button-container {
+    margin-left: 12px;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 600px) {
   header nav {
-    padding: 10px;
+    padding: 10px 20px;
+    margin: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -367,13 +492,49 @@
     height: 60px;
     font-size: 18px;
   }
+
+  .app-modal-content {
+    width: 270px;
+    padding: 15px;
+  }
+
+  .app-modal-close {
+    font-size: 19px;
+    top: 9px;
+    right: 13px;
+  }
+
+  .app-icon {
+    font-size: 30px;
+  }
+
+  .app-title {
+    font-size: 12px;
+    padding-left: 8px;
+  }
+
+  .app-subtitle {
+    font-size: 14px;
+    padding-left: 8px;
+  }
+
+  .app-download-btn {
+    padding: 9px 16px;
+    font-size: 14px;
+    max-width: 140px;
+  }
+
+  .app-button-container {
+    margin-left: 0px;
+  }
 }
 
 @media (max-width: 480px) {
   header nav {
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding: 10px 15px;
+    margin: 10px;
   }
 
   .nav-div{
@@ -479,6 +640,46 @@
     height: 60px;
     font-size: 18px;
   }
+
+  .app-modal-content {
+    width: 240px;
+    padding: 12px;
+  }
+
+  .app-modal-close {
+    font-size: 16px;
+    top: 8px;
+    right: 10px;
+  }
+
+  .app-icon {
+    font-size: 26px;
+  }
+
+  .app-title {
+    font-size: 11px;
+    padding-left: 15px;
+  }
+
+  .app-subtitle {
+    font-size: 13px;
+    padding-left: 15px;
+  }
+
+  .app-download-btn {
+    padding: 8px 14px;
+    font-size: 13px;
+    max-width: 120px;
+    margin-left: 5px;
+  }
+
+  .app-button-container {
+    margin-left: 5px;
+  }
+
+  .app-header {
+    gap: 8px;
+  }
 }
 
 @media (min-width: 1559px) and (max-width: 1799px) {
@@ -540,6 +741,39 @@
   footer p{
     font-size: 20px;
   }
+
+  .app-modal-content {
+    width: 340px;
+    padding: 22px;
+  }
+
+  .app-modal-close {
+    font-size: 28px;
+    top: 16px;
+    right: 22px;
+  }
+
+  .app-icon {
+    font-size: 44px;
+  }
+
+  .app-title {
+    font-size: 17px;
+  }
+
+  .app-subtitle {
+    font-size: 19px;
+  }
+
+  .app-download-btn {
+    padding: 14px 26px;
+    font-size: 19px;
+    max-width: 200px;
+  }
+
+  .app-button-container {
+    margin-left: 18px;
+  }
 }
 
 @media (min-width: 1800px) and (max-width: 2199px) {
@@ -599,6 +833,39 @@
 
   footer p{
     font-size: 24px;
+  }
+
+  .app-modal-content {
+    width: 380px;
+    padding: 24px;
+  }
+
+  .app-modal-close {
+    font-size: 30px;
+    top: 18px;
+    right: 24px;
+  }
+
+  .app-icon {
+    font-size: 46px;
+  }
+
+  .app-title {
+    font-size: 18px;
+  }
+
+  .app-subtitle {
+    font-size: 20px;
+  }
+
+  .app-download-btn {
+    padding: 15px 28px;
+    font-size: 20px;
+    max-width: 220px;
+  }
+
+  .app-button-container {
+    margin-left: 20px;
   }
 }
 
@@ -660,6 +927,39 @@
   footer p{
     font-size: 28px;
   }
+
+  .app-modal-content {
+    width: 450px;
+    padding: 28px;
+  }
+
+  .app-modal-close {
+    font-size: 34px;
+    top: 20px;
+    right: 28px;
+  }
+
+  .app-icon {
+    font-size: 52px;
+  }
+
+  .app-title {
+    font-size: 20px;
+  }
+
+  .app-subtitle {
+    font-size: 22px;
+  }
+
+  .app-download-btn {
+    padding: 16px 32px;
+    font-size: 22px;
+    max-width: 260px;
+  }
+
+  .app-button-container {
+    margin-left: 24px;
+  }
 }
 
 @media (min-width: 3000px) {
@@ -719,6 +1019,43 @@
 
   footer p{
     font-size: 36px;
+  }
+
+  .app-modal-content {
+    width: 550px;
+    padding: 35px;
+  }
+
+  .app-modal-close {
+    font-size: 40px;
+    top: 25px;
+    right: 35px;
+  }
+
+  .app-icon {
+    font-size: 62px;
+  }
+
+  .app-title {
+    font-size: 24px;
+  }
+
+  .app-subtitle {
+    font-size: 26px;
+  }
+
+  .app-download-btn {
+    padding: 20px 40px;
+    font-size: 26px;
+    max-width: 320px;
+  }
+
+  .app-button-container {
+    margin-left: 30px;
+  }
+
+  .app-header {
+    gap: 18px;
   }
 }
 

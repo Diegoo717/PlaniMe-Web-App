@@ -8,6 +8,152 @@ body {
   font-family: "Bubblegum Sans", sans-serif;
 }
 
+.app-modal {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10000;
+  display: block;
+  animation: modalEntrance 10s ease-out forwards,
+    modalBounce 3s ease-in-out 10s infinite;
+}
+
+.app-modal-content {
+  background: linear-gradient(135deg, #467326, #79a637);
+  border: 3px solid #000;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  padding: 15px;
+  width: 260px;
+  position: relative;
+  overflow: hidden;
+}
+
+.app-modal-content::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #dfe372, #eff299, #dfe372, #eff299);
+  background-size: 400% 400%;
+  border-radius: 18px;
+  z-index: -1;
+  animation: borderGlow 2s linear infinite;
+}
+
+.app-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none !important;
+    border: none !important;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    z-index: 2;
+    transition: all 0.3s ease;
+    padding: 0 !important;
+    margin: 0 !important;
+    line-height: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    outline: none !important;
+    width: auto !important;
+    height: auto !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.app-modal-close:hover {
+    color: #dfe372;
+    transform: scale(1.2);
+}
+
+.app-modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 5px;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-right: 35px;
+}
+
+.app-icon {
+  font-size: 35px;
+  animation: phoneWiggle 2s ease-in-out infinite;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.7));
+  flex-shrink: 0;
+}
+
+.app-text-header {
+  flex: 1;
+  color: white;
+  padding-right: 15px;
+}
+
+.app-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 0 3px 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 2);
+  line-height: 1.2;
+  text-align: center;
+}
+
+.app-subtitle {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+  color: #dfe372;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 2);
+  text-align: center;
+}
+
+.app-button-container {
+  display: flex;
+  justify-content: center;
+  padding: 0 5px;
+  margin-left: 15px;
+}
+
+.app-download-btn {
+  background: linear-gradient(135deg, #dfe372, #eff299);
+  border: 2px solid #000;
+  border-radius: 8px;
+  padding: 10px 20px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Bubblegum Sans", sans-serif;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 160px;
+}
+
+.app-download-btn:hover {
+  background: linear-gradient(135deg, #eff299, #dfe372);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.app-download-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
 header nav {
   position: sticky;
   top: 10px;
@@ -23,16 +169,16 @@ header nav {
   color: white;
   animation: reveal3 1s ease-out;
   flex-direction: row;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3)
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
 }
 
-.tittle{
+.tittle {
   text-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
 
-#main-h1{
-    font-size: 40px;
-    text-shadow: 3px 3px 2px rgba(0, 0, 0, 1);
+#main-h1 {
+  font-size: 40px;
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 1);
 }
 
 #main-h2 {
@@ -44,8 +190,8 @@ header nav {
   font-size: 25px;
 }
 
-.main-button{
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3)
+.main-button {
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
 }
 
 a {
@@ -87,7 +233,7 @@ main {
   transform: translateX(-2000px);
   animation: reveal2 1s ease-out 1s forwards;
   font-size: 18px;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3)
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
 }
 
 button {
@@ -199,7 +345,7 @@ article {
   display: flex;
   justify-content: space-around;
   margin-bottom: 80px;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3)
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
 }
 
 article section {
@@ -227,8 +373,8 @@ article section {
   display: flex;
   align-items: center;
   padding: 40px 0;
-  background-color: #F0F78F; 
-  border-top: 5px solid black; 
+  background-color: #f0f78f;
+  border-top: 5px solid black;
   border-bottom: 5px solid black;
 }
 
@@ -271,7 +417,7 @@ article aside img {
   animation: reveal linear both;
   animation-timeline: view();
   animation-range: entry 25% cover 40%;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3)
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
 }
 
 div article img {
@@ -335,15 +481,15 @@ div article img {
   text-shadow: 2px 2px 3px rgb(4, 4, 4);
 }
 
-#article1{
+#article1 {
   text-shadow: 2px 2px 3px rgb(4, 4, 4);
 }
 
-#article2{
+#article2 {
   text-shadow: 2px 2px 3px rgb(255, 255, 255);
 }
 
-#article3{
+#article3 {
   text-shadow: 2px 2px 3px rgb(4, 4, 4);
 }
 
@@ -366,7 +512,7 @@ footer {
   border-radius: 10px;
   height: 100px;
   color: white;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3)
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
 }
 
 .div-footer-index {
@@ -392,5 +538,3 @@ footer p.rights {
   color: #dfe372;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
 }
-
-
