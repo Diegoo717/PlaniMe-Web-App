@@ -305,5 +305,32 @@
         derechos reservados.
       </p>
     </footer>
+    <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const downloadBtn = document.getElementById('download-app-btn');
+    const closeBtn = document.getElementById('close-modal');
+    const modal = document.getElementById('app-download-modal');
+
+    function showModal() {
+      modal.style.display = 'block';
+    }
+
+    downloadBtn.addEventListener('click', function() {
+      const link = document.createElement('a');
+      link.href = '/assets/downloads/PlaniMe_v1.0.apk'; 
+      link.download = 'PlaniMe_v1.0.apk'; 
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      
+      modal.style.display = 'none';
+    });
+
+    closeBtn.addEventListener('click', function() {
+      modal.style.display = 'none';
+    });
+
+  });
+</script>
   </body>
 </html>
