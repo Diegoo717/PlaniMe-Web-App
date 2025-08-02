@@ -142,7 +142,7 @@ El proyecto incluye configuración de GitHub Actions para despliegue automático
 **Ing. Diego Magaña Álvarez**
 - **Rol**: Arquitecto y Desarrollador Full-Stack
 - **Experiencia**: 3+ años en el ciclo completo de desarrollo de aplicaciones web/móviles y sistemas escalables
-- **Especialidades**: 
+- **Enfoque en el proyecto**: 
   - Diseño arquitectónico hasta implementación en producción
   - Construcción de interfaces dinámicas y APIs robustas
   - Administración de bases de datos y despliegue en cloud
