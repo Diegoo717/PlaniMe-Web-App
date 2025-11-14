@@ -1,164 +1,221 @@
-# PlaniMe WebApp 🍎
+<div align="center">
 
-Una aplicación web moderna para la gestión de planes alimenticios personalizados, desarrollada con tecnologías vanilla para máximo rendimiento y compatibilidad.
+# 🍎 PlaniMe Web
 
-🌐 **[Ver Demo en Vivo](https://planime.diecode.lat/index.html)**
+**Your personalized nutrition assistant: smart meal plans and health tracking**
 
-## 📋 Descripción
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-PlaniMe WebApp es una interfaz frontend desarrollada con HTML, CSS y JavaScript vanilla, que interactúa con la API RESTful de PlaniMe. Permite a los usuarios visualizar y gestionar planes alimenticios personalizados, optimizando la experiencia tanto en dispositivos móviles como de escritorio.
+🌐 **[Live Demo](https://planime.diecode.lat)**
 
-## 🚀 Características Principales
+</div>
 
-- ✅ **Planes Personalizados**: Gestión completa de planes alimenticios adaptados a cada usuario
-- 📱 **Diseño Responsive**: Optimizado para dispositivos móviles y escritorio (Mobile First)
-- 🔐 **Autenticación Segura**: Sistema de autenticación con JWT
-- ⚡ **Alto Rendimiento**: Optimización de assets y lazy loading
-- 🎨 **Interfaz Intuitiva**: Diseño limpio y fácil de usar
-- 🔄 **API RESTful**: Comunicación eficiente con el backend
+---
 
-## 🛠️ Tecnologías
+## 🎯 About The Project
 
-### Frontend
-- **HTML5**: Estructura semántica y accesible
-- **CSS3**: Estilos modernos con animaciones y diseño responsive
-- **JavaScript Vanilla**: Lógica de aplicación sin dependencias externas
+**PlaniMe Web** is a modern frontend interface developed with vanilla HTML, CSS, and JavaScript that interacts with the PlaniMe RESTful API. It allows users to view and manage personalized meal plans, optimizing the experience for both mobile and desktop devices with a mobile-first approach.
 
-### Arquitectura
-- **Patrón**: Cliente-Servidor (REST API)
-- **Comunicación**: Fetch API + JSON
-- **Seguridad**: JWT + HTTPS + CORS
-- **Rendimiento**: Optimización de assets y lazy loading
+### What Makes PlaniMe Special?
 
-## 📁 Estructura del Proyecto
+- 🍽️ **Personalized Plans**: Complete management of meal plans adapted to each user
+- 📱 **Responsive Design**: Optimized for mobile and desktop (Mobile First)
+- 🔐 **Secure Authentication**: JWT-based authentication system
+- ⚡ **High Performance**: Asset optimization and lazy loading
+- 🎨 **Intuitive Interface**: Clean and easy-to-use design
+- 🔄 **RESTful API**: Efficient communication with backend
 
-```
-PLANIME-WEBAPP/
-│
-├── .gitignore
-├── index.html
-│
-├── .github/
-│   └── workflows/
-│       └── main.yml              # CI/CD Pipeline
-│
-├── assets/
-│   ├── css/
-│   │   ├── animations/           # Animaciones CSS
-│   │   ├── base/                 # Estilos base
-│   │   └── responsive/           # Media queries
-│   │
-│   ├── downloads/
-│   │   └── PlaniMe_v1.0.apk     # Versión móvil
-│   │
-│   ├── images/                   # Recursos gráficos
-│   └── js/                       # Scripts JavaScript
-│
-└── pages/
-    ├── auth/                     # Autenticación
-    ├── contact/                  # Contacto
-    ├── home/                     # Página principal
-    ├── plans/                    # Gestión de planes
-    └── user/                     # Perfil de usuario
-```
+---
 
-## 🎯 Nuestra Misión
+## ✨ Key Features
 
-Empoderar a las personas para que alcancen sus objetivos de salud y bienestar a través de planes de nutrición personalizados que sean accesibles, efectivos y disfrutables.
+### 🥗 Meal Plan Management
 
-## 🔮 Nuestra Visión
+- Create and customize personalized nutrition plans
+- Daily and weekly meal planning
+- Nutritional information tracking
+- Recipe recommendations
 
-Revolucionar la forma en que las personas abordan la nutrición combinando tecnología de vanguardia con ciencia nutricional.
+### 📊 Progress Tracking
 
-## 💎 Nuestros Valores
+- Weight monitoring over time
+- Goal achievement tracking
+- Visual statistics and charts
+- Progress history
 
-### Personalización
-Creemos que no hay dos personas iguales, y sus planes de nutrición tampoco deberían serlo.
+### 👤 User Dashboard
 
-### Adaptabilidad
-Aprendemos y nos ajustamos continuamente para ofrecerte las soluciones más efectivas.
+- Personal profile management
+- Health metrics configuration
+- Dietary preferences and restrictions
+- Activity level settings
 
-### Simplicidad
-Hacemos que la nutrición sea sencilla y accesible, eliminando la complejidad.
+### 🎨 User Experience
 
-## 🚀 Instalación y Uso
+- Modern and clean design
+- Smooth CSS animations
+- Responsive across all devices
+- Optimized loading times
 
-### Prerrequisitos
-- Navegador web moderno (Chrome, Firefox, Safari, Edge)
-- Servidor web local (opcional para desarrollo)
+---
 
-### Instalación
+## 🛠️ Tech Stack
 
-1. **Clona el repositorio**
+### Core
+
+- **[HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)** - Semantic and accessible structure
+- **[CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)** - Modern styles with animations
+- **[JavaScript (Vanilla)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)** - No external dependencies
+
+### Architecture
+
+- **Pattern**: Client-Server (REST API)
+- **Communication**: Fetch API + JSON
+- **Security**: JWT + Google OAuth + HTTPS + CORS
+- **Performance**: Asset optimization and lazy loading
+
+### CI/CD
+
+- **GitHub Actions** - Automated deployment pipeline
+- **Workflow**: `.github/workflows/main.yml`
+
+---
+
+## 📂 Project Structure
+
+The project follows a modular structure with clear separation of concerns:
+
+- **Assets Layer**: Contains all static resources including CSS (base styles, animations, responsive), images, JavaScript modules, and downloadable files
+- **Pages Layer**: Organized by feature modules including authentication, contact, home, meal plans management, and user profile
+- **Styling Architecture**: Modular CSS with separated concerns for animations, base styles, and responsive design
+- **Scripts**: Vanilla JavaScript modules for API communication, authentication, and UI interactions
+
+---
+
+## 📦 Prerequisites
+
+- Modern web browser (Chrome, Firefox, Safari, Edge)
+- Local web server (optional for development)
+
+---
+
+## 🚀 Installation
+
+### For Development
+
+1. **Clone the repository**
+
    ```bash
-   git clone https://github.com/tu-usuario/planime-webapp.git
+   git clone https://github.com/Diegoo717/PlaniMe-Web-App.git
    cd planime-webapp
    ```
 
-2. **Servidor local (opcional)**
+2. **Start a local server**
+
    ```bash
-   # Con Python
+   # Using Python
    python -m http.server 8000
-   
-   # Con Node.js (http-server)
+
+   # Using Node.js (http-server)
    npx http-server
    ```
 
-3. **Accede a la aplicación**
+3. **Access the application**
    ```
    http://localhost:8000
    ```
 
-### Uso en Producción
+### For Production
 
-La aplicación está optimizada para ser servida desde cualquier servidor web estático. Simplemente sube los archivos a tu servidor web y configura el dominio.
-
-## 📱 Versión Móvil
-
-Además de la versión web responsive, también contamos con una aplicación móvil nativa disponible en:
-- **Android**: `assets/downloads/PlaniMe_v1.0.apk`
-
-## 🔧 Desarrollo
-
-### Scripts Disponibles
-
-La aplicación utiliza JavaScript vanilla, por lo que no requiere proceso de build. Para desarrollo:
-
-1. Realiza cambios en los archivos fuente
-2. Recarga el navegador para ver los cambios
-3. Utiliza las herramientas de desarrollo del navegador para debugging
-
-### CI/CD
-
-El proyecto incluye configuración de GitHub Actions para despliegue automático:
-- **Archivo**: `.github/workflows/main.yml`
-- **Triggers**: Push a rama main
-- **Acciones**: Deploy automático a servidor de producción
-
-
-
-## 👨‍💻 Desarrollador
-
-**Ing. Diego Magaña Álvarez**
-- **Rol**: Arquitecto y Desarrollador Full-Stack
-- **Experiencia**: 3+ años en el ciclo completo de desarrollo de aplicaciones web/móviles y sistemas escalables
-- **Enfoque en el proyecto**: 
-  - Diseño arquitectónico hasta implementación en producción
-  - Construcción de interfaces dinámicas y APIs robustas
-  - Administración de bases de datos y despliegue en cloud
-  - Optimización de rendimiento y seguridad
-  - Automatización con prácticas DevOps (CI/CD)
-- **Contacto**: [soydiegoo71@gmail.com](mailto:soydiegoo71@gmail.com)
-
-## 🆘 Soporte
-
-¿Necesitas ayuda? Puedes:
-- Crear un [issue](https://github.com/tu-usuario/planime-webapp/issues) en GitHub
-- Contactar al desarrollador: [soydiegoo71@gmail.com](mailto:soydiegoo71@gmail.com)
-- Visitar nuestra página de [contacto](https://planime.diecode.lat/pages/contact/contactUs.html)
+The application is optimized to be served from any static web server. Simply upload the files to your web server and configure your domain.
 
 ---
 
-⭐ Si te gusta este proyecto, ¡no olvides darle una estrella!
+## 📱 Mobile Version
 
-**PlaniMe** - Revolucionando la nutrición personalizada con tecnología 🚀
+In addition to the responsive web version, we also have a native mobile application available:
+
+- **Android APK**: Available at `assets/downloads/PlaniMe_v1.0.apk`
+- **Repository**: [PlaniMe Mobile](https://github.com/Diegoo717/PlaniMe-MobileApp)
+
+---
+
+## 🔧 Development
+
+### Development Workflow
+
+Since the application uses vanilla JavaScript, it doesn't require a build process:
+
+1. Make changes to source files
+2. Reload the browser to see changes
+3. Use browser developer tools for debugging
+
+### CI/CD Pipeline
+
+The project includes GitHub Actions configuration for automatic deployment:
+
+- **File**: `.github/workflows/main.yml`
+- **Triggers**: Push to main branch
+- **Actions**: Automatic deployment to production server
+
+---
+
+## 🌐 API Integration
+
+The application connects to PlaniMe's RESTful API:
+
+- **Authentication**: JWT for secure sessions
+- **Plans**: Complete CRUD for meal plans
+- **Progress**: Weight tracking and goal monitoring
+- **Profile**: Personal information management
+
+---
+
+## 📜 Available Scripts
+
+```bash
+# No build process required - just open index.html in a browser
+# Or use any local server for development
+```
+
+---
+
+## 📄 License
+
+© 2025 PlaniMe. All rights reserved.
+
+This project is a personal portfolio project and is not licensed for public use, modification, or distribution.
+
+---
+
+## 📞 Contact
+
+**Diego Magaña Álvarez**  
+_Full-Stack Developer_
+
+soydiegoo71@gmail.com | +52 445 105 9192
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/diego-magana-dev)
+
+---
+
+## 🙏 Acknowledgments
+
+- [MDN Web Docs](https://developer.mozilla.org/)
+- [HTML5 Specification](https://html.spec.whatwg.org/)
+- [CSS3 Documentation](https://www.w3.org/Style/CSS/)
+- [JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
+
+---
+
+<div align="center">
+
+**Made with ❤️ and ☕**
+
+⭐ Don't forget to give the project a star if you liked it! ⭐
+
+**PlaniMe** - Revolutionizing personalized nutrition with web technology 🚀
+
+</div>
